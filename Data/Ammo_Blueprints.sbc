@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Blueprints> 
+	
+   <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>MA_150mm</SubtypeId>
+      </Id>
+      <DisplayName>150mm Tiger Shells</DisplayName>
+      <Icon>Textures\GUI\Icons\MA_150mm.dds</Icon>
+      <Prerequisites>
+        <Item Amount="160" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="8" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="16" TypeId="Ingot" SubtypeId="Magnesium" />
+        <Item Amount="8" TypeId="Ingot" SubtypeId="Cobalt" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="MA_150mm" />
+      <BaseProductionTimeInSeconds>32</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+   <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>MA_30mm</SubtypeId>
+      </Id>
+      <DisplayName>30mm Tiger Shells</DisplayName>
+      <Icon>Textures\GUI\Icons\MA_150mm.dds</Icon>
+      <Prerequisites>
+        <Item Amount="30" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="1" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="2" TypeId="Ingot" SubtypeId="Magnesium" />
+        <Item Amount="1" TypeId="Ingot" SubtypeId="Cobalt" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="MA_30mm" />
+      <BaseProductionTimeInSeconds>6</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+
+	
+  </Blueprints>
+</Definitions>

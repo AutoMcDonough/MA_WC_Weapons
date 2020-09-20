@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Sounds>
+
+	<Sound>
+      <Id>
+        <TypeId>AudioDefinition</TypeId>
+        <SubtypeId>MA_Tiger_150shot</SubtypeId>
+      </Id>
+      <Category>WEP_SHIP</Category>
+      <MaxDistance>800</MaxDistance>
+      <Volume>.5</Volume>
+      <Loopable>false</Loopable>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Tiger_150.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+
+	<Sound>
+      <Id>
+        <TypeId>AudioDefinition</TypeId>
+        <SubtypeId>MA_Tiger_30shot</SubtypeId>
+      </Id>
+      <Category>WEP_SHIP</Category>
+      <MaxDistance>400</MaxDistance>
+      <Volume>.3</Volume>
+      <Loopable>false</Loopable>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Tiger_30.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>AudioDefinition</TypeId>
+        <SubtypeId>MA_Tiger_reload</SubtypeId>
+      </Id>
+      <Category>WEP_SHIP</Category>
+      <MaxDistance>30</MaxDistance>
+      <Volume>.2</Volume>
+      <Loopable>false</Loopable>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Tiger_reload.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+
+	<Sound>
+      <Id>
+        <TypeId>AudioDefinition</TypeId>
+        <SubtypeId>MA_Tiger_30_reload</SubtypeId>
+      </Id>
+      <Category>WEP_SHIP</Category>
+      <MaxDistance>15</MaxDistance>
+      <Volume>.2</Volume>
+      <Loopable>false</Loopable>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Tiger_30_reload.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </Sounds>
+</Definitions>
