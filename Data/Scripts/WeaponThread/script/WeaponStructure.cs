@@ -15,12 +15,14 @@ namespace WeaponThread
             [ProtoMember(4)] internal HardPointDef HardPoint;
             [ProtoMember(5)] internal AmmoDef[] Ammos;
             [ProtoMember(6)] internal string ModPath;
+            [ProtoMember(7)] internal Dictionary<string, UpgradeValues[]> Upgrades;
 
             [ProtoContract]
             public struct ModelAssignmentsDef
             {
                 [ProtoMember(1)] internal MountPointDef[] MountPoints;
                 [ProtoMember(2)] internal string[] Barrels;
+                [ProtoMember(3)] internal string Ejector;
 
                 [ProtoContract]
                 public struct MountPointDef
@@ -170,6 +172,20 @@ namespace WeaponThread
             }
 
             [ProtoContract]
+            public struct UpgradeValues
+            {
+                [ProtoMember(1)] internal string[] Ammo;
+                [ProtoMember(2)] internal int RateOfFireMod;
+                [ProtoMember(3)] internal int BarrelsPerShotMod;
+                [ProtoMember(4)] internal int ReloadMod;
+                [ProtoMember(5)] internal int MaxHeatMod;
+                [ProtoMember(6)] internal int HeatSinkRateMod;
+                [ProtoMember(7)] internal int ShotsInBurstMod;
+                [ProtoMember(8)] internal int DelayAfterBurstMod;
+                [ProtoMember(9)] internal int AmmoPriority;
+            }
+
+            [ProtoContract]
             public struct HardPointDef
             {
                 public enum Prediction
@@ -312,7 +328,9 @@ namespace WeaponThread
                 [ProtoMember(18)] internal bool HardPointUsable;
                 [ProtoMember(19)] internal AmmoPatternDef Pattern;
                 [ProtoMember(20)] internal int EnergyMagazineSize;
-
+                [ProtoMember(21)] internal float DecayPerShot;
+                [ProtoMember(22)] internal AmmoEjectionDef Ejection;
+                
                 [ProtoContract]
                 public struct DamageScaleDef
                 {
@@ -326,6 +344,8 @@ namespace WeaponThread
                     [ProtoMember(7)] internal CustomScalesDef Custom;
                     [ProtoMember(8)] internal ShieldDef Shields;
                     [ProtoMember(9)] internal FallOffDef FallOff;
+                    [ProtoMember(10)] internal double HealthHitModifier;
+                    [ProtoMember(11)] internal double VoxelHitModifier;
 
                     [ProtoContract]
                     public struct FallOffDef
@@ -417,6 +437,7 @@ namespace WeaponThread
                     {
                         [ProtoMember(1)] internal ParticleDef Ammo;
                         [ProtoMember(2)] internal ParticleDef Hit;
+                        [ProtoMember(3)] internal ParticleDef Eject;
                     }
 
                     [ProtoContract]
@@ -529,6 +550,28 @@ namespace WeaponThread
                 }
 
                 [ProtoContract]
+                public struct AmmoEjectionDef
+                {
+                    public enum SpawnType
+                    {
+                        Item,
+                        Particle,
+                    }
+                    [ProtoMember(1)] internal float Speed;
+                    [ProtoMember(2)] internal float SpawnChance;
+                    [ProtoMember(3)] internal SpawnType Type;
+                    [ProtoMember(4)] internal ComponentDef CompDef;
+
+                    [ProtoContract]
+                    public struct ComponentDef
+                    {
+                        [ProtoMember(1)] internal string ItemDefinition;
+                        [ProtoMember(2)] internal int LifeTime;
+                        [ProtoMember(3)] internal int Delay;
+                    }
+                }
+
+                [ProtoContract]
                 public struct AreaDamageDef
                 {
                     public enum AreaEffectType
@@ -577,6 +620,24 @@ namespace WeaponThread
                         [ProtoMember(3)] internal bool Depletable;
                         [ProtoMember(4)] internal double TriggerRange;
                         [ProtoMember(5)] internal int MaxStacks;
+                        [ProtoMember(6)] internal PushPullDef Force;
+
+                        [ProtoContract]
+                        public struct PushPullDef
+                        {
+                            public enum Force
+                            {
+                                ProjectileLastPosition,
+                                ProjectileOrigin,
+                                HitPosition,
+                                TargetCenter,
+                                TargetCenterOfMass,
+                            }
+
+                            [ProtoMember(1)] internal Force ForceFrom;
+                            [ProtoMember(2)] internal Force ForceTo;
+                            [ProtoMember(3)] internal Force Position;
+                        }
                     }
 
                     [ProtoContract]
@@ -586,6 +647,7 @@ namespace WeaponThread
                         [ProtoMember(2)] internal bool ArmOnlyOnHit;
                         [ProtoMember(3)] internal float DetonationRadius;
                         [ProtoMember(4)] internal float DetonationDamage;
+                        [ProtoMember(5)] internal int MinArmingTime;
                     }
 
                     [ProtoContract]
@@ -701,4 +763,3 @@ namespace WeaponThread
         }
     }
 }
-

@@ -41,6 +41,8 @@
 		<string>ConveyorSorter/MA_Blister</string>
 		<string>ConveyorSorter/MA_Tiger</string>
 		<string>ConveyorSorter/MA_Tiger_30_sm</string>		
+
+		<string>LargeGatlingTurret/MA_EMP</string>
 		
       </ItemIds>
     </Category>
