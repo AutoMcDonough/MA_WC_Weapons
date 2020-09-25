@@ -187,7 +187,34 @@ namespace WeaponThread
                             },
                     }
                 },*/
-            }
+            },
+			
+			EventParticles = new Dictionary<PartAnimationSetDef.EventTriggers, EventParticle[]>
+            {
+                [Firing] = new[]{
+                    new EventParticle
+                    {
+                        EmptyNames = Names("muzzle_missile_003"),
+                        MuzzleNames = Names("muzzle_missile_003"),
+                        StartDelay = 0, //ticks 60 = 1 second
+                        LoopDelay = 0, //ticks 60 = 1 second
+                        ForceStop = true,
+                        Particle = new ParticleDef
+                        {
+                            Name = "ShipWelderArc",
+                            Color = Color(red: 10, green: 20, blue: 20, alpha: 1),
+                            Extras = new ParticleOptionDef
+                            {
+                                Loop = false,
+                                Restart = false,
+                                MaxDistance = 500, //meters
+                                MaxDuration = 5, //ticks 60 = 1 second
+                                Scale = 2,
+                            }
+                        }
+                    },
+                },
+            },
         };
     }
 }

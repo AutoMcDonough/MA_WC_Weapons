@@ -37,10 +37,10 @@ namespace WeaponThread
                     Colors: new []
                     {
                         Color(0, 0, 0, 1),
-                        Color(10, .01f, 0, 10),
-                        Color(40, .02f, 0, 60),
-                        Color(60, .04f, 0, 80),
-                        Color(80, .1f, .08f, 120),
+                      //  Color(0, 12, 25, 1),
+                      //  Color(0, 24, 50, 1),
+                      //  Color(0, 36, 75, 1),
+                        Color(0, 35, 100, 1),
                     },
                     IntensityFrom:1, //starting intensity, can be 0.0-1.0 or 1.0-0.0, setting both from and to, to the same value will stay at that value
                     IntensityTo:15,
@@ -55,18 +55,18 @@ namespace WeaponThread
                     EmissiveName: "EMPCoolDown",
                     Colors: new []
                     {
-                         Color(80, .1f, .08f, 120),      
-                        Color(60, .04f, 0, 80),
-                        Color(40, .02f, 0, 60),
-                        Color(10, .01f, 0, 10),
+                         Color(0, 35, 100, 1),      
+                      //  Color(0, 36, 75, 1),
+                     //  Color(0, 24, 50, 1),
+                      //  Color(0, 12, 25, 1),
                         Color(0, 0, 0, 1),
 						
 						
 						
 						
                     },
-                    IntensityFrom:1, //starting intensity, can be 0.0-1.0 or 1.0-0.0, setting both from and to, to the same value will stay at that value
-                    IntensityTo:15,
+                    IntensityFrom:15, //starting intensity, can be 0.0-1.0 or 1.0-0.0, setting both from and to, to the same value will stay at that value
+                    IntensityTo:1,
                     CycleEmissiveParts: false,//whether to cycle from one part to the next, while also following the Intensity Range, or set all parts at the same time to the same value
                     LeavePreviousOn: false,//true will leave last part at the last setting until end of animation, used with cycleEmissiveParts
                     EmissivePartNames: new []
@@ -124,7 +124,7 @@ namespace WeaponThread
                                 new RelMove
                                 {
                                     CenterEmpty = "",//Specifiy an empty on the subpart to rotate around
-                                    TicksToMove = 190, //number of ticks to complete motion, 60 = 1 second
+                                    TicksToMove = 120, //number of ticks to complete motion, 60 = 1 second
 
                                     MovementType = ExpoGrowth, // ExpoGrowth (speedsup),  ExpoDecay (slows down), Linear, Delay, Show, Hide
                                     EmissiveName = "EMPHeatUp",//name of defined emissive 
@@ -140,7 +140,7 @@ namespace WeaponThread
                                 new RelMove
                                 {
                                     CenterEmpty = "",//Specifiy an empty on the subpart to rotate around
-                                    TicksToMove = 70, //number of ticks to complete motion, 60 = 1 second
+                                    TicksToMove = 120, //number of ticks to complete motion, 60 = 1 second
 
                                     MovementType = ExpoDecay, // ExpoGrowth (speedsup),  ExpoDecay (slows down), Linear, Delay, Show, Hide
                                     EmissiveName = "EMPCoolDown",
