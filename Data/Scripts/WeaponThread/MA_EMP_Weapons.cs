@@ -128,15 +128,15 @@ namespace WeaponThread {
                     Barrel1 = new ParticleDef
                     {
 						Name = "",
-						Color = Color(red: 10, green: 10, blue: 20, alpha: 1),
-                        Offset = Vector(x: 0, y: 0, z: -1),
+						Color = Color(red: 10, green: 15, blue: 20, alpha: 1),
+                        Offset = Vector(x: 0, y: 0, z: -0.5f),
 						Extras = new ParticleOptionDef
 						{
-							Loop = false,
+							Loop = true,
 							Restart = true,
-							MaxDistance = 500, //meters
-							MaxDuration = 5, //ticks 60 = 1 second
-							Scale = 5,
+							MaxDistance = 400, //meters
+							MaxDuration = 30, //ticks 60 = 1 second
+							Scale = 3,
 						}
                     },
                 },
