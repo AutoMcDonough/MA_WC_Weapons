@@ -960,6 +960,7 @@ namespace WeaponThread
                     Depletable = false,
                     MaxStacks = 10,
                     TriggerRange = 1f,
+                    DisableParticleEffect = true,
                     Force = new PushPullDef // AreaEffectDamage is multiplied by target mass.
                     {
                         ForceFrom = ProjectileLastPosition, // ProjectileLastPosition, ProjectileOrigin, HitPosition, TargetCenter, TargetCenterOfMass
