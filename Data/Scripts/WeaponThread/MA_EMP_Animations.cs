@@ -90,7 +90,7 @@ namespace WeaponThread
                         ForceStop = true,
                         Particle = new ParticleDef
                         {
-                            Name = "MA_laserhit_reversed",
+                            Name = "WC_Collision_Sparks",
                             Color = Color(red: 1, green: 10, blue: 20, alpha: 0.5f),
                             Extras = new ParticleOptionDef
                             {
@@ -98,7 +98,7 @@ namespace WeaponThread
                                 Restart = false,
                                 MaxDistance = 800, //meters
                                 MaxDuration = 5000, //ticks 60 = 1 second
-                                Scale = 3f,
+                                Scale = 0.3f,
                             }
                         }
                     },

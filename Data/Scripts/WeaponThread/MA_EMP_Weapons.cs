@@ -127,7 +127,7 @@ namespace WeaponThread {
                 {
                     Barrel1 = new ParticleDef
                     {
-						Name = "",
+						Name = "MA_laserhit_reversed",
 						Color = Color(red: 10, green: 15, blue: 20, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: -0.5f),
 						Extras = new ParticleOptionDef
