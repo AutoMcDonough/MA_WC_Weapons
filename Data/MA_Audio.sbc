@@ -66,17 +66,48 @@
       </Waves>
     </Sound>
 
-
-
-
-
-
-
-
-
-
-
-
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>EMPFiringSound</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>250</MaxDistance>
+      <PitchVariation>100</PitchVariation>
+      <PreventSynchronization>0</PreventSynchronization>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>3</DynamicMusicAmount>
+      <DistantSounds>
+        <DistantSound DistanceCrossfade="10" Distance="200" Sound="EMPFiringSoundDistant" />
+      </DistantSounds>
+      <Volume>1</Volume>
+      <Loopable>true</Loopable>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\EMP_Fire_Start.wav</Start>
+          <Loop>Audio\EMP_Fire_Loop.wav</Loop>
+          <End>Audio\EMP_Fire_Stop.wav</End>
+        </Wave>
+      </Waves>
+    </Sound>
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>EMPFiringSoundDistant</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>800</MaxDistance>
+      <PitchVariation>100</PitchVariation>
+      <Volume>1</Volume>
+      <Loopable>true</Loopable>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\EMP_Fire_Start_Dist.wav</Start>
+          <Loop>Audio\EMP_Fire_Loop_Dist.wav</Loop>
+          <End>Audio\EMP_Fire_Stop_Dist.wav</End>
+        </Wave>
+      </Waves>
+    </Sound>
 
   </Sounds>
 </Definitions>
