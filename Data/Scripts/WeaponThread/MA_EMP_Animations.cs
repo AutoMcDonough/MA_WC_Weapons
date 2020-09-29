@@ -86,7 +86,7 @@ namespace WeaponThread
                         EmptyNames = Names("muzzle_projectile_001"),
                         MuzzleNames = Names("muzzle_projectile_001"),
                         StartDelay = 0, //ticks 60 = 1 second
-                        LoopDelay = 600, //ticks 60 = 1 second
+                        LoopDelay = 0, //ticks 60 = 1 second
                         ForceStop = true,
                         Particle = new ParticleDef
                         {
