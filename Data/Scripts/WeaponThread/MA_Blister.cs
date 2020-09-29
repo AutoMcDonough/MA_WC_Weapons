@@ -40,6 +40,7 @@ namespace WeaponThread {
                 {
                     "muzzle_03", "muzzle_04",
                 },
+				Ejector = "Shell_Casings",
             },
             Targeting = new TargetingDef
             {

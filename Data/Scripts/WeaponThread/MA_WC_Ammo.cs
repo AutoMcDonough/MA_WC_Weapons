@@ -260,7 +260,7 @@ namespace WeaponThread
                     },
                     Eject = new ParticleDef
                     {
-                        Name = "",
+                        Name = "Shell_Casings",
                         ApplyToShield = true,
                         ShrinkByDistance = false,
                         Color = Color(red: 3, green: 1.9f, blue: 1f, alpha: 1),
@@ -269,9 +269,9 @@ namespace WeaponThread
                         {
                             Loop = true,
                             Restart = false,
-                            MaxDistance = 5000,
-                            MaxDuration = 30,
-                            Scale = 1,
+                            MaxDistance = 500,
+                            MaxDuration = 60,
+                            Scale = 2,
                             HitPlayChance = 1f,
                         },
                     },
@@ -872,6 +872,7 @@ namespace WeaponThread
             BackKickForce = 0f,
 			DecayPerShot = 0f,            
             HardPointUsable = true,
+            EnergyMagazineSize = 0,
             IgnoreWater = false,
 
             Shape = new ShapeDef //defines the collision shape of projectile, defaults line and visual Line Length if set to 0
