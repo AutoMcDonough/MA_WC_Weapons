@@ -189,6 +189,10 @@ namespace WeaponThread
                 },*/
             },
 			
+        };
+		
+        private AnimationDef MA_Gladius_EMP_Animations => new AnimationDef
+        {
 			EventParticles = new Dictionary<PartAnimationSetDef.EventTriggers, EventParticle[]>
             {
                 [Firing] = new[]{
@@ -201,20 +205,21 @@ namespace WeaponThread
                         ForceStop = true,
                         Particle = new ParticleDef
                         {
-                            Name = "ShipWelderArc",
-                            Color = Color(red: 10, green: 20, blue: 20, alpha: 1),
+                            Name = "WC_Collision_Sparks",
+                            Color = Color(red: 1, green: 10, blue: 20, alpha: 0.5f),
                             Extras = new ParticleOptionDef
                             {
-                                Loop = false,
+                                Loop = true,
                                 Restart = false,
-                                MaxDistance = 500, //meters
-                                MaxDuration = 5, //ticks 60 = 1 second
-                                Scale = 2,
-                            }
+                                MaxDistance = 800, //meters
+                                MaxDuration = 5000, //ticks 60 = 1 second
+                                Scale = 0.3f,
+							}
                         }
                     },
                 },
             },
         };
+
     }
 }
