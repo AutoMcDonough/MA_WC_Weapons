@@ -1221,8 +1221,8 @@ namespace WeaponThread
                 Shields = new ShieldDef
                 {
                     Modifier = 1f,
-                    Type = Bypass,
-                    BypassModifier = 0.0000001f,
+                    Type = Energy,
+                    BypassModifier = -1,
                 },
                 // first true/false (ignoreOthers) will cause projectiles to pass through all blocks that do not match the custom subtypeIds.
                 Custom = new CustomScalesDef
