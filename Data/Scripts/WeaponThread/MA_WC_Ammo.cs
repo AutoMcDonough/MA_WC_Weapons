@@ -1221,8 +1221,8 @@ namespace WeaponThread
                 Shields = new ShieldDef
                 {
                     Modifier = 1f,
-                    Type = Energy,
-                    BypassModifier = -1f,
+                    Type = Bypass,
+                    BypassModifier = 0.0000001f,
                 },
                 // first true/false (ignoreOthers) will cause projectiles to pass through all blocks that do not match the custom subtypeIds.
                 Custom = new CustomScalesDef
@@ -1294,6 +1294,7 @@ namespace WeaponThread
                     Depletable = false,
                     MaxStacks = 10,
                     TriggerRange = 1f,
+                    DisableParticleEffect = true,
                     Force = new PushPullDef // AreaEffectDamage is multiplied by target mass.
                     {
                         ForceFrom = ProjectileLastPosition, // ProjectileLastPosition, ProjectileOrigin, HitPosition, TargetCenter, TargetCenterOfMass
