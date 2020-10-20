@@ -115,32 +115,11 @@
         <SubtypeId>GladiusFiringSound</SubtypeId>
       </Id>
       <Category>SHOT</Category>
-      <MaxDistance>250</MaxDistance>
-      <PitchVariation>10</PitchVariation>
+      <MaxDistance>1000</MaxDistance>
+      <PitchVariation>20</PitchVariation>
       <PreventSynchronization>0</PreventSynchronization>
       <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
       <DynamicMusicAmount>3</DynamicMusicAmount>
-      <DistantSounds>
-        <DistantSound DistanceCrossfade="10" Distance="200" Sound="GladiusFiringSoundDistant" />
-      </DistantSounds>
-      <Volume>1</Volume>
-      <Loopable>true</Loopable>
-      <Waves>
-        <Wave Type="D3">
-          <Start>Audio\GLadius_Fire_Start.wav</Start>
-          <Loop>Audio\GLadius_Fire_Loop.wav</Loop>
-          <End>Audio\GLadius_Fire_Stop.wav</End>
-        </Wave>
-      </Waves>
-    </Sound>
-    <Sound>
-      <Id>
-        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
-        <SubtypeId>GladiusFiringSoundDistant</SubtypeId>
-      </Id>
-      <Category>SHOT</Category>
-      <MaxDistance>800</MaxDistance>
-      <PitchVariation>10</PitchVariation>
       <Volume>1</Volume>
       <Loopable>true</Loopable>
       <Waves>
@@ -158,35 +137,16 @@
         <SubtypeId>GladiusPreFiringSound</SubtypeId>
       </Id>
       <Category>SHOT</Category>
-      <MaxDistance>250</MaxDistance>
+      <MaxDistance>100</MaxDistance>
       <PitchVariation>100</PitchVariation>
       <PreventSynchronization>0</PreventSynchronization>
       <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
       <DynamicMusicAmount>3</DynamicMusicAmount>
-      <DistantSounds>
-        <DistantSound DistanceCrossfade="10" Distance="200" Sound="EMPFiringSoundDistant" />
-      </DistantSounds>
       <Volume>1</Volume>
-      <Loopable>true</Loopable>
+      <Loopable>false</Loopable>
       <Waves>
         <Wave Type="D3">
-          <Start>Audio\Gladius_PreFire.wav</Start>
-        </Wave>
-      </Waves>
-    </Sound>
-    <Sound>
-      <Id>
-        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
-        <SubtypeId>GladiusPreFiringSoundDistant</SubtypeId>
-      </Id>
-      <Category>SHOT</Category>
-      <MaxDistance>800</MaxDistance>
-      <PitchVariation>100</PitchVariation>
-      <Volume>1</Volume>
-      <Loopable>true</Loopable>
-      <Waves>
-        <Wave Type="D3">
-          <Start>Audio\Gladius_PreFire.wav</Start>
+          <Start>Audio\Gladius_PreFire.xwm</Start>
         </Wave>
       </Waves>
     </Sound>
