@@ -213,9 +213,9 @@ namespace WeaponThread {
                 Ui = new UiDef
                 {
                     RateOfFire = false,
-                    DamageModifier = true,
+                    DamageModifier = false,
                     ToggleGuidance = false,
-                    EnableOverload =  true,
+                    EnableOverload =  false,
                 },
                 Ai = new AiDef
                 {
@@ -254,12 +254,12 @@ namespace WeaponThread {
                     SkipBarrels = 0,
                     ReloadTime = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     DelayUntilFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                    HeatPerShot = 15, //10 heat generated per shot
-                    MaxHeat = 2000, //max heat before weapon enters cooldown (70% of max heat)
+                    HeatPerShot = 1, //10 heat generated per shot
+                    MaxHeat = 1000, //max heat before weapon enters cooldown (70% of max heat)
                     Cooldown = 0.25f, //percent of max heat to be under to start firing again after overheat accepts .2-.95
-                    HeatSinkRate = 250, //amount of heat lost per second
+                    HeatSinkRate = 1000, //amount of heat lost per second
                     DegradeRof = false, // progressively lower rate of fire after 80% heat threshold (80% of max heat)
-                    ShotsInBurst = 0,
+                    ShotsInBurst = 120,
                     DelayAfterBurst = 300, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     FireFullBurst = false,
                 },
@@ -298,14 +298,6 @@ namespace WeaponThread {
             Animations = MA_Gladius_EMP_Animations,
             // Don't edit below this line
         };				
-		
-
-		
-		
-		
-		
-		
-		
 		
     }
 }
