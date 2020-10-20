@@ -1222,7 +1222,7 @@ namespace WeaponThread
                 {
                     Modifier = 1f,
                     Type = Energy,
-                    BypassModifier = -1,
+                    BypassModifier = -1f,
                 },
                 // first true/false (ignoreOthers) will cause projectiles to pass through all blocks that do not match the custom subtypeIds.
                 Custom = new CustomScalesDef

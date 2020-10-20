@@ -248,7 +248,7 @@ namespace WeaponThread {
                 Loading = new LoadingDef
                 {
                     RateOfFire = 3600,
-                    BarrelSpinRate = 0, // visual only, 0 disables and uses RateOfFire
+                    BarrelSpinRate = 500, // visual only, 0 disables and uses RateOfFire
                     BarrelsPerShot = 1,
                     TrajectilesPerBarrel = 1, // Number of Trajectiles per barrel per fire event.
                     SkipBarrels = 0,
