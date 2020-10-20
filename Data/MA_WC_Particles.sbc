@@ -13007,10 +13007,10 @@
       <Version>0</Version>
       <ParticleId>76354</ParticleId>
       <Length>1</Length>
-      <DurationMin>0.65</DurationMin>
-      <DurationMax>0.65</DurationMax>
+      <DurationMin>1</DurationMin>
+      <DurationMax>30</DurationMax>
       <DistanceMax>2000</DistanceMax>
-      <Loop>false</Loop>
+      <Loop>true</Loop>
       <ParticleGenerations>
         <ParticleGeneration Name="Smoke" Version="2">
           <GenerationType>GPU</GenerationType>
