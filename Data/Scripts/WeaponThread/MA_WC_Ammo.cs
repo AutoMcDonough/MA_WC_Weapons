@@ -19,7 +19,7 @@ namespace WeaponThread
 { // Don't edit above this line
     partial class Weapons
     {
-		        private AmmoDef MA_Gatling => new AmmoDef
+		private AmmoDef MA_Gatling => new AmmoDef
         {
 			AmmoMagazine = "NATO_25x184mm",
 			AmmoRound = "MA_GatlingAmmo",
@@ -311,13 +311,13 @@ namespace WeaponThread
                     },
                     Trail = new TrailDef
                     {
-                        Enable = false,
+                        Enable = true,
                         Textures = new[] {
-							"ProjectileTrailLine",
+							"WeaponLaser",
                         },
                         TextureMode = Normal,
-                        DecayTime = 1,
-                        Color = Color(red: 3, green: 3, blue: 2, alpha: 0.1f),
+                        DecayTime = 10,
+                        Color = Color(red: 1, green: 1, blue: 0.75f, alpha: 0.5f),
                         Back = false,
                         CustomWidth = 0f,
                         UseWidthVariance = true,
@@ -859,7 +859,6 @@ namespace WeaponThread
             }, // Don't edit below this line
         };
  
-
         private AmmoDef MA_Laser_2 => new AmmoDef //gladius laser
         {
             AmmoMagazine = "Energy",
@@ -1150,7 +1149,7 @@ namespace WeaponThread
  
         private AmmoDef MA_Ion_1 => new AmmoDef //gladius and EMP ion
         {
-                   AmmoMagazine = "Energy",
+            AmmoMagazine = "Energy",
             AmmoRound = "MA_Ion_1",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.1f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
@@ -1160,6 +1159,7 @@ namespace WeaponThread
             BackKickForce = 0f,
             DecayPerShot = 0f,
             HardPointUsable = true, // set to false if this is a shrapnel ammoType and you don't want the turret to be able to select it directly.
+            EnergyMagazineSize = 0,
             IgnoreWater = false,
 
             Shape = new ShapeDef //defines the collision shape of projectile, defaults line and visual Line Length if set to 0
