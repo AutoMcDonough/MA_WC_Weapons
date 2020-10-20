@@ -70,7 +70,7 @@
 		<RotationSpeed>0.002</RotationSpeed>
 		<ElevationSpeed>0.002 </ElevationSpeed>
 		<IdleRotation>true</IdleRotation>
-		<MaxRangeMeters>1200</MaxRangeMeters>
+		<MaxRangeMeters>500</MaxRangeMeters>
 		<MinFov>0.1</MinFov>
 		<MaxFov>1.04719755</MaxFov>
 		<EmissiveColorPreset>Default</EmissiveColorPreset>

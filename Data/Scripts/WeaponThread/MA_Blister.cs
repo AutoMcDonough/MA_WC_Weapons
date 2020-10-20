@@ -40,6 +40,7 @@ namespace WeaponThread {
                 {
                     "muzzle_03", "muzzle_04",
                 },
+				Ejector = "Shell_Casings",
             },
             Targeting = new TargetingDef
             {
@@ -122,7 +123,7 @@ namespace WeaponThread {
                 Audio = new HardPointAudioDef
                 {
                     PreFiringSound = "",
-                    FiringSound = "WepShipGatlingShot", // subtype name from sbc
+                    FiringSound = "WepTurretInteriorFire", // subtype name from sbc
                     FiringSoundPerShot = true,
                     ReloadSound = "",
                     NoAmmoSound = "",
@@ -133,30 +134,16 @@ namespace WeaponThread {
                 {
                     Barrel1 = new ParticleDef
                     {
-                        Name = "", // Smoke_LargeGunShot
-                        Color = Color(red: 1, green: 1, blue: 1, alpha: 1),
-                        Offset = Vector(x: 0, y: -1, z: 0),
-                        Extras = new ParticleOptionDef
-                        {
-                            Loop = false,
-                            Restart = false,
-                            MaxDistance = 500,
-                            MaxDuration = 60,
-                            Scale = .2f,
-                        },
-                    },
-                    Barrel2 = new ParticleDef
-                    {
                         Name = "MA_Gatling_Flash",//Muzzle_Flash_Large
                         Color = Color(red: 1, green: 1, blue: 1, alpha: 1),
-                        Offset = Vector(x: 0, y: 0, z: -1),
+                        Offset = Vector(x: 0, y: 0, z: 0),//offset is bugged right now
                         Extras = new ParticleOptionDef
                         {
                             Loop = false,
                             Restart = false,
-                            MaxDistance = 500,
-                            MaxDuration = 60,
-                            Scale = 1f,
+                            MaxDistance = 600,
+                            MaxDuration = 15,
+                            Scale = 1.5f,
                         },
                     },
                 },
@@ -168,12 +155,6 @@ namespace WeaponThread {
             Animations = BlisterAnimations,
             // Don't edit below this line
         };
-		
- 
-		
-				
-		
-		
 		
     }
 }

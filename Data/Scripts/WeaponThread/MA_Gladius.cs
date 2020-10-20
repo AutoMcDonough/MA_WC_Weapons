@@ -101,26 +101,27 @@ namespace WeaponThread {
                     TrajectilesPerBarrel = 1, // Number of Trajectiles per barrel per fire event.
                     SkipBarrels = 0,
                     ReloadTime = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                    DelayUntilFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                    HeatPerShot = 1, //10 heat generated per shot
-                    MaxHeat = 10000, //max heat before weapon enters cooldown (70% of max heat)
+                    DelayUntilFire = 55, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                    HeatPerShot = 2, //10 heat generated per shot
+                    MaxHeat = 400, //max heat before weapon enters cooldown (70% of max heat)
                     Cooldown = .5f, //percent of max heat to be under to start firing again after overheat accepts .2-.95
-                    HeatSinkRate = 55, //amount of heat lost per second
+                    HeatSinkRate = 200, //amount of heat lost per second
                     DegradeRof = false, // progressively lower rate of fire after 80% heat threshold (80% of max heat)
                     ShotsInBurst = 480, //for beam this is time in ticks
-                    DelayAfterBurst = 120, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                    DelayAfterBurst = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     FireFullBurst = true,
 					GiveUpAfterBurst = true,
                 },
                 Audio = new HardPointAudioDef
                 {
-                    PreFiringSound = "",
-                    FiringSound = "", // subtype name from sbc
+                    PreFiringSound = "GladiusPreFiringSound",
+                    FiringSound = "GladiusFiringSound", // subtype name from sbc
                     FiringSoundPerShot = false,
                     ReloadSound = "",
                     NoAmmoSound = "",
                     HardPointRotationSound = "WepTurretGatlingRotate",
                     BarrelRotationSound = "",
+                    FireSoundEndDelay = 0, 
                 },
                 Graphics = new HardPointParticleDef
                 {
@@ -204,17 +205,17 @@ namespace WeaponThread {
             HardPoint = new HardPointDef
             {
                 WeaponName = "Gladius Ion", // name of weapon in terminal
-                DeviateShotAngle = 0f,
-                AimingTolerance = .1f, // 0 - 180 firing angle
+                DeviateShotAngle = 0.05f,
+                AimingTolerance = 0.1f, // 0 - 180 firing angle
                 AimLeadingPrediction = Off, // Off, Basic, Accurate, Advanced
                 DelayCeaseFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
 
                 Ui = new UiDef
                 {
                     RateOfFire = false,
-                    DamageModifier = true,
+                    DamageModifier = false,
                     ToggleGuidance = false,
-                    EnableOverload =  true,
+                    EnableOverload =  false,
                 },
                 Ai = new AiDef
                 {
@@ -252,54 +253,40 @@ namespace WeaponThread {
                     TrajectilesPerBarrel = 1, // Number of Trajectiles per barrel per fire event.
                     SkipBarrels = 0,
                     ReloadTime = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                    DelayUntilFire = 30, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                    HeatPerShot = 15, //10 heat generated per shot
+                    DelayUntilFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                    HeatPerShot = 1, //10 heat generated per shot
                     MaxHeat = 1000, //max heat before weapon enters cooldown (70% of max heat)
                     Cooldown = 0.25f, //percent of max heat to be under to start firing again after overheat accepts .2-.95
-                    HeatSinkRate = 250, //amount of heat lost per second
+                    HeatSinkRate = 1000, //amount of heat lost per second
                     DegradeRof = false, // progressively lower rate of fire after 80% heat threshold (80% of max heat)
-                    ShotsInBurst = 0,
+                    ShotsInBurst = 120,
                     DelayAfterBurst = 300, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     FireFullBurst = false,
                 },
                 Audio = new HardPointAudioDef
                 {
                     PreFiringSound = "",
-                    FiringSound = "", // subtype name from sbc
+                    FiringSound = "EMPFiringSound", // subtype name from sbc
                     FiringSoundPerShot = false,
                     ReloadSound = "",
                     NoAmmoSound = "",
-                    HardPointRotationSound = "",
+                    HardPointRotationSound = "WepTurretGatlingRotate",
                     BarrelRotationSound = "",
                 },
                 Graphics = new HardPointParticleDef
                 {
                     Barrel1 = new ParticleDef
                     {
-                        Name = "", // Smoke_LargeGunShot
-                        Color = Color(red: 1, green: 1, blue: 1, alpha: 1),
-                        Offset = Vector(x: 0, y: -1, z: 0),
-                        Extras = new ParticleOptionDef
-                        {
-                            Loop = true,
-                            Restart = false,
-                            MaxDistance = 200,
-                            MaxDuration = 1,
-                            Scale = 1.0f,
-                        },
-                    },
-                    Barrel2 = new ParticleDef
-                    {
-                        Name = "",//Muzzle_Flash_Large
-                        Color = Color(red: 1, green: 1, blue: 1, alpha: 1),
-                        Offset = Vector(x: 0, y: -1, z: 0),
-                        Extras = new ParticleOptionDef
-                        {
-                            Loop = false,
-                            Restart = false,
-                            MaxDistance = 100,
-                            MaxDuration = 1,
-                            Scale = 1f,
+						Name = "MA_laserhit_reversed",
+						Color = Color(red: 10, green: 15, blue: 20, alpha: 1),
+                        Offset = Vector(x: 0, y: 0, z: -0.5f),
+						Extras = new ParticleOptionDef
+						{
+							Loop = true,
+							Restart = true,
+							MaxDistance = 400, //meters
+							MaxDuration = 30, //ticks 60 = 1 second
+							Scale = 3,
                         },
                     },
                 },
@@ -308,17 +295,9 @@ namespace WeaponThread {
 			Ammos = new [] {
                 MA_Ion_1
             },
-            //Animations = AdvancedAnimation,
+            Animations = MA_Gladius_EMP_Animations,
             // Don't edit below this line
         };				
-		
-
-		
-		
-		
-		
-		
-		
 		
     }
 }
