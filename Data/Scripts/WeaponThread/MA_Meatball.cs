@@ -126,12 +126,12 @@ namespace WeaponThread {
                 {
                     Barrel1 = new ParticleDef
                     {
-                        Name = "", // Smoke_LargeGunShot
+                        Name = "MA_Smoke_LargeGunShot", // Smoke_LargeGunShot
                         Color = Color(red: 1, green: 1, blue: 1, alpha: 1),
-                        Offset = Vector(x: 0, y: -1, z: 0),
+                        Offset = Vector(x: 0, y: 0, z: -1),
                         Extras = new ParticleOptionDef
                         {
-                            Loop = false,
+                            Loop = true,
                             Restart = false,
                             MaxDistance = 500,
                             MaxDuration = 60,
@@ -263,7 +263,7 @@ namespace WeaponThread {
                 Audio = new HardPointAudioDef
                 {
                     PreFiringSound = "",
-                    FiringSound = "WepShipGatlingShot", // subtype name from sbc
+                    FiringSound = "WepTurretInteriorFire", // subtype name from sbc
                     FiringSoundPerShot = true,
                     ReloadSound = "",
                     NoAmmoSound = "",
@@ -274,12 +274,12 @@ namespace WeaponThread {
                 {
                     Barrel1 = new ParticleDef
                     {
-                        Name = "Smoke_LargeGunShot", // Smoke_LargeGunShot
+                        Name = "MA_Smoke_LargeGunShot", // Smoke_LargeGunShot
                         Color = Color(red: 1, green: 1, blue: 1, alpha: 1),
-                        Offset = Vector(x: 0, y: -1, z: 0),
+                        Offset = Vector(x: 0, y: 0, z: -1),
                         Extras = new ParticleOptionDef
                         {
-                            Loop = false,
+                            Loop = true,
                             Restart = false,
                             MaxDistance = 500,
                             MaxDuration = 60,
@@ -421,22 +421,22 @@ namespace WeaponThread {
                 Graphics = new HardPointParticleDef
                 {
                     Barrel1 = new ParticleDef
-                   {
-                        Name = "MA_Gatling_Flash",//Muzzle_Flash_Large
+                    {
+                        Name = "MA_Smoke_LargeGunShot", // Smoke_LargeGunShot
                         Color = Color(red: 1, green: 1, blue: 1, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: -1),
                         Extras = new ParticleOptionDef
                         {
-                            Loop = false,
+                            Loop = true,
                             Restart = false,
                             MaxDistance = 500,
                             MaxDuration = 60,
-                            Scale = 1f,
+                            Scale = .2f,
                         },
                     },
                     Barrel2 = new ParticleDef
                     {
-                        Name = "",//Muzzle_Flash_Large
+                        Name = "MA_Gatling_Flash",//Muzzle_Flash_Large
                         Color = Color(red: 1, green: 1, blue: 1, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: -1),
                         Extras = new ParticleOptionDef
