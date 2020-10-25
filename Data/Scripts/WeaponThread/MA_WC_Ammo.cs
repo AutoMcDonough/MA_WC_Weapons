@@ -25,7 +25,7 @@ namespace WeaponThread
 			AmmoRound = "MA_GatlingAmmo",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000001f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 150f,
+            BaseDamage = 100f,
             Mass = 1f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 50f,
@@ -88,7 +88,7 @@ namespace WeaponThread
                 {
 					Armor = 0.8f,
 					Light = 0.8f,
-					Heavy = 0.8f,
+					Heavy = 0.6f,
 					NonArmor = 1f,
                 },
                 Shields = new ShieldDef
@@ -598,7 +598,7 @@ namespace WeaponThread
             AmmoRound = "MA_Laser_1",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 1f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel    (15 * 0.05 * 3600/60/60 = 0.75MW per tick)
-            BaseDamage = 20f,
+            BaseDamage = 10f,
             Mass = 0f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 0f,
@@ -634,7 +634,7 @@ namespace WeaponThread
                 Characters = 0.25f,
                 FallOff = new FallOffDef
                 {
-                    Distance = 4000f, // Distance at which max damage begins falling off.
+                    Distance = 1000f, // Distance at which max damage begins falling off.
                     MinMultipler = 0.5f, // value from 0.0f to 1f where 0.1f would be a min damage of 10% of max damage.
                 },
                 Grids = new GridSizeDef
@@ -645,8 +645,8 @@ namespace WeaponThread
                 Armor = new ArmorDef
                 {
                     Armor = -1f,
-                    Light = -1f,
-                    Heavy = -1f,
+                    Light = 0.8f,
+                    Heavy = 0.4f,
                     NonArmor = -1f,
                 },
                 Shields = new ShieldDef
@@ -724,7 +724,7 @@ namespace WeaponThread
                 MaxLifeTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 10f,
                 DesiredSpeed = 30000,
-                MaxTrajectory = 3500f,
+                MaxTrajectory = 2500f,
                 FieldTime = 600, // 0 is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
@@ -865,7 +865,7 @@ namespace WeaponThread
             AmmoRound = "MA_Laser_2",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 1f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel    (15 * 0.05 * 3600/60/60 = 0.75MW per tick)
-            BaseDamage = 150f,
+            BaseDamage = 100f,
             Mass = 0f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 0f,
@@ -914,7 +914,7 @@ namespace WeaponThread
                 Characters = -1f,
                 FallOff = new FallOffDef
                 {
-                    Distance = 5000f, // Distance at which max damage begins falling off.
+                    Distance = 1000f, // Distance at which max damage begins falling off.
                     MinMultipler = 0.5f, // value from 0.0f to 1f where 0.1f would be a min damage of 10% of max damage.
                 },
                 Grids = new GridSizeDef
@@ -925,8 +925,8 @@ namespace WeaponThread
                 Armor = new ArmorDef
                 {
                     Armor = -1f,
-                    Light = -1f,
-                    Heavy = -1f,
+                    Light = .8f,
+                    Heavy = .4f,
                     NonArmor = -1f,
                 },
                 Shields = new ShieldDef
@@ -1004,7 +1004,7 @@ namespace WeaponThread
                 MaxLifeTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 10f,
                 DesiredSpeed = 30000,
-                MaxTrajectory = 3500f,
+                MaxTrajectory = 2500f,
                 FieldTime = 600, // 0 is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
@@ -1203,8 +1203,8 @@ namespace WeaponThread
                 // modifier values: -1 = disabled (higher performance), 0 = no damage, 0.01 = 1% damage, 2 = 200% damage.
                 FallOff = new FallOffDef
                 {
-                    Distance = 0f, // Distance at which max damage begins falling off.
-                    MinMultipler = 0f, // value from 0.0f to 1f where 0.1f would be a min damage of 10% of max damage.
+                    Distance = 1000f, // Distance at which max damage begins falling off.
+                    MinMultipler = 0.5f, // value from 0.0f to 1f where 0.1f would be a min damage of 10% of max damage.
                 },
                 Grids = new GridSizeDef
                 {
@@ -1247,7 +1247,7 @@ namespace WeaponThread
             {
                 AreaEffect = EmpField, // Disabled = do not use area effect at all, Explosive, Radiant, AntiSmart, JumpNullField, JumpNullField, EnergySinkField, AnchorField, EmpField, OffenseField, NavField, DotField.
                 AreaEffectDamage = 125f, // 0 = use spillover from BaseDamage, otherwise use this value.
-                AreaEffectRadius = 20f,
+                AreaEffectRadius = 10f,
                 Pulse = new PulseDef // interval measured in game ticks (60 == 1 second), pulseChance chance (0 - 100) that an entity in field will be hit
                 {
                     Interval = 1,
@@ -1766,7 +1766,7 @@ namespace WeaponThread
             AmmoRound = "MA_Laser_4",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 1f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel    (15 * 0.05 * 3600/60/60 = 0.75MW per tick)
-            BaseDamage = 50f,
+            BaseDamage = 20f,
             Mass = 0f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 0f,
@@ -1802,7 +1802,7 @@ namespace WeaponThread
                 Characters = 0.25f,
                 FallOff = new FallOffDef
                 {
-                    Distance = 4000f, // Distance at which max damage begins falling off.
+                    Distance = 1000f, // Distance at which max damage begins falling off.
                     MinMultipler = 0.5f, // value from 0.0f to 1f where 0.1f would be a min damage of 10% of max damage.
                 },
                 Grids = new GridSizeDef
@@ -1813,8 +1813,8 @@ namespace WeaponThread
                 Armor = new ArmorDef
                 {
                     Armor = -1f,
-                    Light = -1f,
-                    Heavy = -1f,
+                    Light = .8f,
+                    Heavy = .4f,
                     NonArmor = -1f,
                 },
                 Shields = new ShieldDef

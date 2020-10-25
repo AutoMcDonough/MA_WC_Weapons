@@ -119,7 +119,7 @@ namespace WeaponThread {
                     HeatSinkRate = 60, //amount of heat lost per second
                     DegradeRof = false, // progressively lower rate of fire after 80% heat threshold (80% of max heat)
                     ShotsInBurst = 60,
-                    DelayAfterBurst = 45, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                    DelayAfterBurst = 90, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     FireFullBurst = true,
                 },
                 Audio = new HardPointAudioDef
@@ -316,7 +316,7 @@ namespace WeaponThread {
                     HeatSinkRate = 45, //amount of heat lost per second
                     DegradeRof = false, // progressively lower rate of fire after 80% heat threshold (80% of max heat)
                     ShotsInBurst = 60,
-                    DelayAfterBurst = 45, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                    DelayAfterBurst = 90, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     FireFullBurst = true,
                 },
                 Audio = new HardPointAudioDef
@@ -676,7 +676,7 @@ namespace WeaponThread {
                     HeatSinkRate = 1, //amount of heat lost per second
                     DegradeRof = false, // progressively lower rate of fire after 80% heat threshold (80% of max heat)
                     ShotsInBurst = 30,
-                    DelayAfterBurst = 10, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                    DelayAfterBurst = 20, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     FireFullBurst = true,
                 },
                 Audio = new HardPointAudioDef
@@ -901,7 +901,7 @@ namespace WeaponThread {
                     HeatPerShot = 1, //10 heat generated per shot
                     MaxHeat = 800, //max heat before weapon enters cooldown (70% of max heat)
                     Cooldown = .5f, //percent of max heat to be under to start firing again after overheat accepts .2-.95
-                    HeatSinkRate = 30, //amount of heat lost per second
+                    HeatSinkRate = 25, //amount of heat lost per second
                     DegradeRof = false, // progressively lower rate of fire after 80% heat threshold (80% of max heat)
                     ShotsInBurst = 0,
                     DelayAfterBurst = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
@@ -1134,7 +1134,7 @@ namespace WeaponThread {
                     HeatPerShot = 1, //10 heat generated per shot
                     MaxHeat = 800, //max heat before weapon enters cooldown (70% of max heat)
                     Cooldown = .5f, //percent of max heat to be under to start firing again after overheat accepts .2-.95
-                    HeatSinkRate = 30, //amount of heat lost per second
+                    HeatSinkRate = 20, //amount of heat lost per second
                     DegradeRof = false, // progressively lower rate of fire after 80% heat threshold (80% of max heat)
                     ShotsInBurst = 0,
                     DelayAfterBurst = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
