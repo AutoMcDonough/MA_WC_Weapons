@@ -39,6 +39,9 @@
 		<string>ConveyorSorter/MA_Gladius</string>		
 		<string>ConveyorSorter/MA_Meatball</string>
 		<string>ConveyorSorter/MA_Blister</string>
+		<string>ConveyorSorter/MA_Blister45</string>	
+		<string>ConveyorSorter/MA_Blister30</string>
+		<string>ConveyorSorter/MA_Blister32</string>		
 		<string>ConveyorSorter/MA_Tiger</string>
 		<string>ConveyorSorter/MA_Tiger_30_sm</string>		
 
@@ -46,7 +49,7 @@
 		
       </ItemIds>
     </Category>
-	
+<!--	
 	<Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
       <Id>
         <TypeId>GuiBlockCategoryDefinition</TypeId>
@@ -75,7 +78,7 @@
 		
       </ItemIds>
     </Category>
-
+-->
   </CategoryClasses>
 </Definitions>
 
