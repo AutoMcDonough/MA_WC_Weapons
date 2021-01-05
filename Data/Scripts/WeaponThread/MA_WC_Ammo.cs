@@ -629,6 +629,7 @@ namespace WeaponThread
                 MaxIntegrity = 0f, // 0 = disabled, 1000 = any blocks with currently integrity above 1000 will be immune to damage.
                 DamageVoxels = false, // true = voxels are vulnerable to this weapon
                 SelfDamage = false, // true = allow self damage.
+                HealthHitModifier = 0.3, // defaults to a value of 1, this setting modifies how much Health is subtracted from a projectile per hit (1 = per hit).
 
                 // modifier values: -1 = disabled (higher performance), 0 = no damage, 0.01 = 1% damage, 2 = 200% damage.
                 Characters = 0.25f,
@@ -865,7 +866,7 @@ namespace WeaponThread
             AmmoRound = "MA_Laser_2",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 1f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel    (15 * 0.05 * 3600/60/60 = 0.75MW per tick)
-            BaseDamage = 100f,
+            BaseDamage = 120f,
             Mass = 0f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 0f,
@@ -1152,7 +1153,7 @@ namespace WeaponThread
             AmmoMagazine = "Energy",
             AmmoRound = "MA_Ion_1",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
-            EnergyCost = 0.1f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
+            EnergyCost = 1f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
             BaseDamage = 1f,
             Mass = 0f, // in kilograms
             Health = 1000, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
@@ -1246,7 +1247,7 @@ namespace WeaponThread
             AreaEffect = new AreaDamageDef
             {
                 AreaEffect = EmpField, // Disabled = do not use area effect at all, Explosive, Radiant, AntiSmart, JumpNullField, JumpNullField, EnergySinkField, AnchorField, EmpField, OffenseField, NavField, DotField.
-                AreaEffectDamage = 20f, // 0 = use spillover from BaseDamage, otherwise use this value.
+                AreaEffectDamage = 5f, // 0 = use spillover from BaseDamage, otherwise use this value.
                 AreaEffectRadius = 7.5f,
                 Pulse = new PulseDef // interval measured in game ticks (60 == 1 second), pulseChance chance (0 - 100) that an entity in field will be hit
                 {
@@ -1527,6 +1528,8 @@ namespace WeaponThread
                 MaxIntegrity = 0f, // 0 = disabled, 1000 = any blocks with currently integrity above 1000 will be immune to damage.
                 DamageVoxels = false, // true = voxels are vulnerable to this weapon
                 SelfDamage = false, // true = allow self damage.
+                HealthHitModifier = 0.3, // defaults to a value of 1, this setting modifies how much Health is subtracted from a projectile per hit (1 = per hit).
+
 
                 // modifier values: -1 = disabled (higher performance), 0 = no damage, 0.01 = 1% damage, 2 = 200% damage.
                 Characters = -1f,
@@ -1766,7 +1769,7 @@ namespace WeaponThread
             AmmoRound = "MA_Laser_4",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 1f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel    (15 * 0.05 * 3600/60/60 = 0.75MW per tick)
-            BaseDamage = 20f,
+            BaseDamage = 40f,
             Mass = 0f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 0f,
