@@ -32,7 +32,7 @@
       <AmmoMagazines>
         <AmmoMagazine Subtype="NATO_25x184mm" />
       </AmmoMagazines>
-      <ReloadTime>6000</ReloadTime>
+      <ReloadTime>30</ReloadTime>
     </Weapon>
   
   
@@ -51,7 +51,7 @@
         <AmmoMagazine Subtype="MA_150mm" />
       </AmmoMagazines>
  
-      <ReloadTime>6000</ReloadTime>
+      <ReloadTime>30</ReloadTime>
     </Weapon>
 	 <Weapon>
       <Id>
