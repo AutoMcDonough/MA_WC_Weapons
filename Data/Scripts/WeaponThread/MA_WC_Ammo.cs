@@ -1153,7 +1153,7 @@ namespace WeaponThread
             AmmoMagazine = "Energy",
             AmmoRound = "MA_Ion_1",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
-            EnergyCost = 1f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
+            EnergyCost = 0.1f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
             BaseDamage = 1f,
             Mass = 0f, // in kilograms
             Health = 1000, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
@@ -1247,8 +1247,8 @@ namespace WeaponThread
             AreaEffect = new AreaDamageDef
             {
                 AreaEffect = EmpField, // Disabled = do not use area effect at all, Explosive, Radiant, AntiSmart, JumpNullField, JumpNullField, EnergySinkField, AnchorField, EmpField, OffenseField, NavField, DotField.
-                AreaEffectDamage = 5f, // 0 = use spillover from BaseDamage, otherwise use this value.
-                AreaEffectRadius = 7.5f,
+                AreaEffectDamage = 100f, // 0 = use spillover from BaseDamage, otherwise use this value.
+                AreaEffectRadius = 15f,
                 Pulse = new PulseDef // interval measured in game ticks (60 == 1 second), pulseChance chance (0 - 100) that an entity in field will be hit
                 {
                     Interval = 1,
@@ -1381,8 +1381,8 @@ namespace WeaponThread
                             Loop = false,
                             Restart = true,
                             MaxDistance = 1000,
-                            MaxDuration = 600,
-                            Scale = 6,
+                            MaxDuration = 10,
+                            Scale = 100,
                             HitPlayChance = 1f,
                         },
                     },
