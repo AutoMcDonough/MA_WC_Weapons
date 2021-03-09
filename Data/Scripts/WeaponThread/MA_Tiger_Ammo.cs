@@ -23,7 +23,7 @@ namespace WeaponThread
                 BaseDamage = 6000f,
                 Mass = 100f, // in kilograms
                 Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
-                BackKickForce = 3000f,
+                BackKickForce = 6000f,
 
                 Shape = new ShapeDef //defines the collision shape of projectile, defaults line and visual Line Length if set to 0
                 {
@@ -272,10 +272,10 @@ namespace WeaponThread
                 AmmoRound = "MA_30mm",
                 HybridRound = false, //AmmoMagazine based weapon with energy cost
                 EnergyCost = 0.00000000001f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-                BaseDamage = 1000f,
-                Mass = 20f, // in kilograms
+                BaseDamage = 800f,
+                Mass = 4f, // in kilograms
                 Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
-                BackKickForce = 500f,
+                BackKickForce = 1000f,
 
                 Shape = new ShapeDef //defines the collision shape of projectile, defaults line and visual Line Length if set to 0
                 {

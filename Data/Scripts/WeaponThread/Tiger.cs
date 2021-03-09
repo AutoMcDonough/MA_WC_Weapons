@@ -92,7 +92,7 @@ namespace WeaponThread {
                     MinElevation = -5,
                     MaxElevation = 3,
                     FixedOffset = false,
-                    InventorySize = .6f,
+                    InventorySize = .5f,
                     Offset = Vector(x: 0, y: 0, z: 0),
                 },
                 Other = new OtherDef {
@@ -247,7 +247,7 @@ namespace WeaponThread {
                     MinElevation = -5,
                     MaxElevation = 3,
                     FixedOffset = false,
-                    InventorySize = .2f,
+                    InventorySize = .125f,
                     Offset = Vector(x: 0, y: 0, z: 0),
                 },
                 Other = new OtherDef {
