@@ -80,7 +80,7 @@
       <MaxFov>1.04719755</MaxFov>
       <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
-      <PCU>400</PCU>
+      <PCU>1500</PCU>
       <IsAirTight>false</IsAirTight>      
     </Definition>	
 	
@@ -159,7 +159,7 @@
       <MaxFov>1.04719755</MaxFov>
       <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
-      <PCU>400</PCU>
+      <PCU>500</PCU>
       <IsAirTight>false</IsAirTight>     
 
 	<BlockVariants>
@@ -257,7 +257,7 @@
       <MaxFov>1.04719755</MaxFov>
       <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
-      <PCU>400</PCU>
+      <PCU>500</PCU>
       <IsAirTight>false</IsAirTight>      
     </Definition>			
 	
@@ -341,7 +341,7 @@
       <MaxFov>1.04719755</MaxFov>
       <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
-      <PCU>400</PCU>
+      <PCU>500</PCU>
       <IsAirTight>false</IsAirTight>      
     </Definition>			
 
@@ -423,7 +423,7 @@
       <MaxFov>1.04719755</MaxFov>
       <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
-      <PCU>400</PCU>
+      <PCU>500</PCU>
       <IsAirTight>false</IsAirTight>      
     </Definition>			
 
@@ -506,7 +506,7 @@
       <MaxFov>1.04719755</MaxFov>
       <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
-      <PCU>400</PCU>
+      <PCU>500</PCU>
       <IsAirTight>false</IsAirTight>      
     </Definition>			
 
@@ -588,7 +588,7 @@
       <MaxFov>1.04719755</MaxFov>
       <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
-      <PCU>400</PCU>
+      <PCU>500</PCU>
       <IsAirTight>false</IsAirTight>      
     </Definition>			
 
@@ -670,7 +670,7 @@
       <MaxFov>1.04719755</MaxFov>
       <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
-      <PCU>400</PCU>
+      <PCU>500</PCU>
       <IsAirTight>false</IsAirTight>      
     </Definition>			
 

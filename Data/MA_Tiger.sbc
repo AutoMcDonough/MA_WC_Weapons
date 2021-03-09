@@ -92,7 +92,7 @@ Commissioned by T1g3rs65.</Description>
       <MaxFov>1.04719755</MaxFov>
       <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
-      <PCU>400</PCU>
+      <PCU>50</PCU>
       <IsAirTight>false</IsAirTight>  
 	  
       <MaxRangeMeters>3000</MaxRangeMeters>	
@@ -189,7 +189,7 @@ Commissioned by T1g3rs65.</Description>
       <MaxFov>1.04719755</MaxFov>
       <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
-      <PCU>400</PCU>
+      <PCU>50</PCU>
       <IsAirTight>false</IsAirTight>  
 	  
       <MaxRangeMeters>3000</MaxRangeMeters>	
@@ -263,11 +263,11 @@ Commissioned by T1g3rs65.</Description>
       <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
       <!--WeaponDefinitionId Subtype="LargeMissileTurret" /-->
 	  
-      <InventoryMaxVolume>.065</InventoryMaxVolume>
+      <InventoryMaxVolume>.01</InventoryMaxVolume>
 	        <InventorySize>
-        <X>.5</X>
-        <Y>.5</Y>
-        <Z>.5</Z>
+        <X>0.1</X>
+        <Y>0.1</Y>
+        <Z>0.1</Z>
       </InventorySize>
 	  
       <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
@@ -285,7 +285,7 @@ Commissioned by T1g3rs65.</Description>
       <MaxFov>1.04719755</MaxFov>
       <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
-      <PCU>400</PCU>
+      <PCU>60</PCU>
       <IsAirTight>false</IsAirTight>  
 	  
       <MaxRangeMeters>3000</MaxRangeMeters>	

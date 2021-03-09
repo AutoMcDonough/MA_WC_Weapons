@@ -15,9 +15,9 @@
         <Z>1.4</Z>
       </Size>
       <Mass>640</Mass>
-      <Volume>17</Volume>
+      <Volume>24</Volume>
       <Model>Models\Ammo\MA_150mm.mwm</Model>
-      <Capacity>16</Capacity>
+      <Capacity>24</Capacity>
       <AmmoDefinitionId Subtype="Energy" />
     </AmmoMagazine>
 
@@ -33,10 +33,10 @@
         <Y>0.15</Y>
         <Z>.12</Z>
  	  </Size>
-      <Mass>128</Mass>
-      <Volume>1</Volume>
+      <Mass>96</Mass>
+      <Volume>5</Volume>
       <Model>Models\Ammo\MA_30mm.mwm</Model>
-      <Capacity>16</Capacity>
+      <Capacity>24</Capacity>
       <AmmoDefinitionId Subtype="Energy" />
     </AmmoMagazine>
 
