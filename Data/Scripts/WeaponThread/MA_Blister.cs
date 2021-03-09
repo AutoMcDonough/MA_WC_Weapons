@@ -35,6 +35,51 @@ namespace WeaponThread {
 						DurabilityMod = 0.85f,
                         IconName = "filter_nato.dds"						
                     },
+					new MountPointDef {
+                        SubtypeId = "MA_Blister45",
+                        AimPartId = "",
+                        MuzzlePartId = "Part2",
+                        AzimuthPartId = "Base3b",
+                        ElevationPartId = "Part2",
+						DurabilityMod = 0.85f,
+                        IconName = "filter_nato.dds"						
+                    },
+					new MountPointDef {
+                        SubtypeId = "MA_Blister45_sm",
+                        AimPartId = "",
+                        MuzzlePartId = "Part2",
+                        AzimuthPartId = "Base3b",
+                        ElevationPartId = "Part2",
+						DurabilityMod = 0.85f,
+                        IconName = "filter_nato.dds"						
+                    },					
+					new MountPointDef {
+                        SubtypeId = "MA_Blister30",
+                        AimPartId = "",
+                        MuzzlePartId = "Part2",
+                        AzimuthPartId = "Base3c",
+                        ElevationPartId = "Part2",
+						DurabilityMod = 0.85f,
+                        IconName = "filter_nato.dds"						
+                    },
+					new MountPointDef {
+                        SubtypeId = "MA_Blister32",
+                        AimPartId = "",
+                        MuzzlePartId = "Part2",
+                        AzimuthPartId = "Base3d",
+                        ElevationPartId = "Part2",
+						DurabilityMod = 0.85f,
+                        IconName = "filter_nato.dds"						
+                    },
+					new MountPointDef {
+                        SubtypeId = "MA_Blister32_sm",
+                        AimPartId = "",
+                        MuzzlePartId = "Part2",
+                        AzimuthPartId = "Base3d",
+                        ElevationPartId = "Part2",
+						DurabilityMod = 0.85f,
+                        IconName = "filter_nato.dds"						
+                    },					
                 },
                 Barrels = new []
                 {
@@ -99,7 +144,7 @@ namespace WeaponThread {
                     GridWeaponCap = 0,
                     RotateBarrelAxis = 0,
                     EnergyPriority = 2,
-                    MuzzleCheck = true,
+                    MuzzleCheck = false,
                     Debug = false,
                 },
                 Loading = new LoadingDef
@@ -143,7 +188,7 @@ namespace WeaponThread {
                             Restart = false,
                             MaxDistance = 600,
                             MaxDuration = 15,
-                            Scale = 1.5f,
+                            Scale = 100f,
                         },
                     },
                 },

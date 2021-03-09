@@ -91,7 +91,7 @@ namespace WeaponThread {
                     GridWeaponCap = 0,
                     RotateBarrelAxis = 0,
                     EnergyPriority = 2,
-                    MuzzleCheck = true,
+                    MuzzleCheck = false,
                     Debug = false,
                 },
                 Loading = new LoadingDef
@@ -239,7 +239,7 @@ namespace WeaponThread {
                     GridWeaponCap = 0,
                     RotateBarrelAxis = 0,
                     EnergyPriority = 2,
-                    MuzzleCheck = true,
+                    MuzzleCheck = false,
                     Debug = false,
                 },
                 Loading = new LoadingDef
@@ -249,7 +249,7 @@ namespace WeaponThread {
                     BarrelsPerShot = 2,
                     TrajectilesPerBarrel = 1, // Number of Trajectiles per barrel per fire event.
                     SkipBarrels = 0,
-                    ReloadTime = 300, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                    ReloadTime = 1200, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     DelayUntilFire = 31, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     HeatPerShot = 3, //heat generated per shot
                     MaxHeat = 2000, //max heat before weapon enters cooldown (70% of max heat)
@@ -263,7 +263,7 @@ namespace WeaponThread {
                 Audio = new HardPointAudioDef
                 {
                     PreFiringSound = "",
-                    FiringSound = "WepTurretInteriorFire", // subtype name from sbc
+                    FiringSound = "WepShipGatlingShot", //"WepTurretInteriorFire", // subtype name from sbc
                     FiringSoundPerShot = true,
                     ReloadSound = "",
                     NoAmmoSound = "",
@@ -387,7 +387,7 @@ namespace WeaponThread {
                     GridWeaponCap = 0,
                     RotateBarrelAxis = 0,
                     EnergyPriority = 2,
-                    MuzzleCheck = true,
+                    MuzzleCheck = false,
                     Debug = false,
                 },
                 Loading = new LoadingDef
@@ -397,7 +397,7 @@ namespace WeaponThread {
                     BarrelsPerShot = 2,
                     TrajectilesPerBarrel = 1, // Number of Trajectiles per barrel per fire event.
                     SkipBarrels = 0,
-                    ReloadTime = 300, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                    ReloadTime = 1200, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     DelayUntilFire = 31, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     HeatPerShot = 3, //heat generated per shot
                     MaxHeat = 2000, //max heat before weapon enters cooldown (70% of max heat)

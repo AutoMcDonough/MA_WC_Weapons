@@ -76,7 +76,7 @@
 		<EmissiveColorPreset>Default</EmissiveColorPreset>
 		<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
 		<DestroySound>WepSmallWarheadExpl</DestroySound>
-		<PCU>225</PCU>
+		<PCU>50</PCU>
 		<IsAirTight>false</IsAirTight>      
 	</Definition>
 	

@@ -89,6 +89,7 @@
 			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
 			<DestroySound>WepSmallWarheadExpl</DestroySound>
 			<AiEnabled>false</AiEnabled>
+      <PCU>300</PCU>			
         </Definition>	
 	
 <!-- PDX large -->
@@ -172,7 +173,8 @@
 			<EmissiveColorPreset>Default</EmissiveColorPreset>
 			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
 			<DestroySound>WepSmallWarheadExpl</DestroySound>
-        </Definition>
+      <PCU>100</PCU> 
+ </Definition>
 
 
 <!-- PDX small -->
@@ -256,6 +258,7 @@
 			<EmissiveColorPreset>Default</EmissiveColorPreset>
 			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
 			<DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>100</PCU>
         </Definition>	
 
 
@@ -332,7 +335,7 @@ Made by AutoMcD Astronautical.</Description>
       <MaxFov>1.04719755</MaxFov>
       <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
-      <PCU>200</PCU>
+      <PCU>75</PCU>
       <IsAirTight>false</IsAirTight>      
     </Definition>
 	
@@ -409,7 +412,7 @@ Made by AutoMcD Astronautical.</Description>
       <MaxFov>1.04719755</MaxFov>
       <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
-      <PCU>275</PCU>
+      <PCU>75</PCU>
       <IsAirTight>false</IsAirTight>      
     </Definition>
 
@@ -464,8 +467,8 @@ Made by AutoMcD Astronautical.</Description>
                 <MountPoint Side="Right" StartX="0.00" StartY="1.00" EndX="1.00" EndY="2.00" />
             </MountPoints>
             <MirroringX>None</MirroringX>
-            <MirroringY>Z</MirroringY>
-            <MirroringZ>Y</MirroringZ>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
             <BlockPairName>MA_Gimbal_Laser_Armored</BlockPairName>
             <VoxelPlacement>
                 <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
@@ -504,6 +507,7 @@ Made by AutoMcD Astronautical.</Description>
 			<EmissiveColorPreset>Default</EmissiveColorPreset>
 			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
 			<DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>100</PCU>
         </Definition>
 		
 
@@ -554,9 +558,8 @@ Made by AutoMcD Astronautical.</Description>
                 <MountPoint Side="Left" StartX="0.00" StartY="1.00" EndX="1.00" EndY="2.00" />
                 <MountPoint Side="Right" StartX="0.00" StartY="1.00" EndX="1.00" EndY="2.00" />
             </MountPoints>
-            <MirroringX>None</MirroringX>
-            <MirroringY>Z</MirroringY>
-            <MirroringZ>Y</MirroringZ>
+ 			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
             <BlockPairName>MA_Gimbal_Laser_Armored_Slope</BlockPairName>
             <VoxelPlacement>
                 <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
@@ -595,6 +598,7 @@ Made by AutoMcD Astronautical.</Description>
 			<EmissiveColorPreset>Default</EmissiveColorPreset>
 			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
 			<DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>100</PCU>
         </Definition>
 
 
@@ -644,9 +648,8 @@ Made by AutoMcD Astronautical.</Description>
 		<MountPoint Side="Left" StartX="0.00" StartY="1.00" EndX="1.00" EndY="2.00" />
 		<MountPoint Side="Right" StartX="0.00" StartY="1.00" EndX="1.00" EndY="2.00" />
 	</MountPoints>
-            <MirroringX>None</MirroringX>
-            <MirroringY>Z</MirroringY>
-            <MirroringZ>Y</MirroringZ>
+           			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
             <BlockPairName>MA_Gimbal_Laser_Armored_Slope2</BlockPairName>
             <VoxelPlacement>
                 <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
@@ -685,6 +688,7 @@ Made by AutoMcD Astronautical.</Description>
 			<EmissiveColorPreset>Default</EmissiveColorPreset>
 			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
 			<DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>100</PCU>
         </Definition>
 		
 
@@ -735,9 +739,8 @@ Made by AutoMcD Astronautical.</Description>
                 <MountPoint Side="Left" StartX="0.00" StartY="1.00" EndX="1.00" EndY="2.00" />
                 <MountPoint Side="Right" StartX="0.00" StartY="1.00" EndX="1.00" EndY="2.00" />
             </MountPoints>
-            <MirroringX>None</MirroringX>
-            <MirroringY>Z</MirroringY>
-            <MirroringZ>Y</MirroringZ>
+      			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
             <BlockPairName>MA_Gimbal_Laser_Armored_Slope45</BlockPairName>
             <VoxelPlacement>
                 <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
@@ -776,6 +779,7 @@ Made by AutoMcD Astronautical.</Description>
 			<EmissiveColorPreset>Default</EmissiveColorPreset>
 			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
 			<DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>100</PCU>
         </Definition>
 
 
@@ -815,10 +819,42 @@ Made by AutoMcD Astronautical.</Description>
           <TypeId>LargeMissileTurret</TypeId>
           <SubtypeId>MA_Gimbal_Laser_Armored_Slope45</SubtypeId>
         </BlockVariant>	
+		 <BlockVariant>
+          <TypeId>LargeMissileTurret</TypeId>
+          <SubtypeId>MA_Gimbal_Laser_T2</SubtypeId>
+        </BlockVariant>
+		<BlockVariant>
+          <TypeId>LargeMissileTurret</TypeId>
+          <SubtypeId>MA_Gimbal_Laser_T2_Armored</SubtypeId>
+        </BlockVariant>
+		<BlockVariant>
+          <TypeId>LargeMissileTurret</TypeId>
+          <SubtypeId>MA_Gimbal_Laser_T2_Armored_Slope</SubtypeId>
+        </BlockVariant>
+		<BlockVariant>
+          <TypeId>LargeMissileTurret</TypeId>
+          <SubtypeId>MA_Gimbal_Laser_T2_Armored_Slope2</SubtypeId>
+        </BlockVariant>
+		<BlockVariant>
+          <TypeId>LargeMissileTurret</TypeId>
+          <SubtypeId>MA_Gimbal_Laser_T2_Armored_Slope45</SubtypeId>
+        </BlockVariant>	
 		<BlockVariant>
           <TypeId>LargeMissileTurret</TypeId>
           <SubtypeId>MA_PDX</SubtypeId>
         </BlockVariant>	
+
+
+
+
+
+
+
+
+
+
+
+		
       </BlockVariants>
 	
 	
@@ -895,7 +931,477 @@ Made by AutoMcD Astronautical.</Description>
 			<EmissiveColorPreset>Default</EmissiveColorPreset>
 			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
 			<DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>100</PCU>
         </Definition>
+
+
+
+
+
+<!-- MA_Gimbal_Laser_T2 -->		
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+            <Id>
+                <TypeId>LargeMissileTurret</TypeId>
+                <SubtypeId>MA_Gimbal_Laser_T2</SubtypeId>
+            </Id>
+            <DisplayName>Gimbal Laser T2</DisplayName>
+			<Description>Laser turret with upgraded power supply.
+Has restricted firing angle but can be armored.			
+Lasers are strong against shields and weak against armor.
+Made by Allied Astronautical.</Description>
+            <Icon>Textures\Icons\MA_Gimbal_Laser.dds</Icon>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="4" z="1" />
+            <ModelOffset x="0" y="0" z="0" />
+			<ShowEdges>false</ShowEdges>
+	
+
+	
+	
+            <Model>Models\MA_Laser2\MA_Gimbal_Laser_T2.mwm</Model>
+            <UseModelIntersection>true</UseModelIntersection>
+            <Components>
+				<Component Subtype="SteelPlate" Count="15" />
+				<Component Subtype="Construction" Count="100" />
+				<Component Subtype="InteriorPlate" Count="10" />
+				<Component Subtype="LargeTube" Count="8" />
+                <Component Subtype="Motor" Count="16" />
+				<Component Subtype="Superconductor" Count="60" />
+				<Component Subtype="BulletproofGlass" Count="15" /> 
+				<Component Subtype="Computer" Count="12" />
+                <Component Subtype="MetalGrid" Count="5" />
+                <Component Subtype="Construction" Count="30" />
+				<Component Subtype="SteelPlate" Count="5" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\MA_Laser2\MA_Gimbal_Laser_T2_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.66" File="Models\MA_Laser2\MA_Gimbal_Laser_T2_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.0" File="Models\MA_Laser2\MA_Gimbal_Laser_T2_BS3.mwm"/>
+			</BuildProgressModels>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="1.0" EndY="2.5"/>
+				<MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="1.0" EndY="2.5"/>
+				<MountPoint Side="Left" StartX="0.0" StartY="0.0" EndX="1.0" EndY="2.5"/>
+				<MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="1.0" EndY="2.5"/>
+				<MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="1.0" EndY="1.0"/>
+			</MountPoints>
+			<BlockPairName>MA_Gimbal_Laser_T2</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+            <VoxelPlacement>
+                <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+                <StaticMode>
+                    <PlacementMode>OutsideVoxel</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </StaticMode>
+                <DynamicMode>
+                    <PlacementMode>OutsideVoxel</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0.01</MinAllowed>
+                </DynamicMode>
+            </VoxelPlacement>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>40</BuildTimeSeconds>
+            <!--OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture-->
+            <WeaponDefinitionId Subtype="MA_Laser" />
+            <InventoryMaxVolume>0.384</InventoryMaxVolume>
+            
+            <ResourceSinkGroup>Defense</ResourceSinkGroup>
+            <MinElevationDegrees>45</MinElevationDegrees>
+            <MaxElevationDegrees>90</MaxElevationDegrees>
+            <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+            <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+            <IdleRotation>true</IdleRotation>
+            <MaxRangeMeters>1000</MaxRangeMeters>
+            <RotationSpeed>0.007</RotationSpeed>
+            <ElevationSpeed>0.005 </ElevationSpeed>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <MinFov>0.1</MinFov>
+            <MaxFov>1.04719755</MaxFov>
+            <ShowEdges>false</ShowEdges>
+			<DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+			<DamagedSound>ParticleElectrical</DamagedSound>
+			<EmissiveColorPreset>Default</EmissiveColorPreset>
+			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+			<DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>100</PCU>
+        </Definition>
+
+<!-- MA_Gimbal_Laser_T2_Armored -->		
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+            <Id>
+                <TypeId>LargeMissileTurret</TypeId>
+                <SubtypeId>MA_Gimbal_Laser_T2_Armored</SubtypeId>
+            </Id>
+            <DisplayName>Gimbal Laser T2 Armored</DisplayName>
+			<Description>Laser turret with upgraded power supply.
+Has restricted firing angle but is armored.			
+Lasers are strong against shields and weak against armor.
+Made by Allied Astronautical.</Description>
+            <Icon>Textures\Icons\MA_Gimbal_Laser_Armored.dds</Icon>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="4" z="1" />
+            <ModelOffset x="0" y="0" z="0" />
+			<ShowEdges>false</ShowEdges>
+	
+
+            <Model>Models\MA_Laser2\MA_Gimbal_Laser_T2_Armored.mwm</Model>
+            <UseModelIntersection>true</UseModelIntersection>
+            <Components>
+                <Component Subtype="SteelPlate" Count="15" />
+				<Component Subtype="Construction" Count="100" />
+				<Component Subtype="InteriorPlate" Count="10" />
+				<Component Subtype="SmallTube" Count="18" />
+                <Component Subtype="LargeTube" Count="8" />
+                <Component Subtype="Motor" Count="16" />
+				<Component Subtype="Superconductor" Count="60" />
+				<Component Subtype="BulletproofGlass" Count="15" /> 
+				<Component Subtype="Computer" Count="12" />
+                <Component Subtype="MetalGrid" Count="50" />
+                <Component Subtype="Construction" Count="30" />
+				<Component Subtype="SteelPlate" Count="130" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.0" StartY="0.01" EndX="1.0" EndY="3.99"/>
+				<MountPoint Side="Back" StartX="0.0" StartY="0.01" EndX="1.0" EndY="3.99"/>
+				<MountPoint Side="Left" StartX="0.0" StartY="0.01" EndX="1.0" EndY="3.99"/>
+				<MountPoint Side="Right" StartX="0.0" StartY="0.01" EndX="1" EndY="3.99"/>
+				<MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="1.0" EndY="1.0"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\MA_Laser2\MA_Gimbal_Laser_T2_Armored_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.66" File="Models\MA_Laser2\MA_Gimbal_Laser_T2_Armored_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.0" File="Models\MA_Laser2\MA_Gimbal_Laser_T2_Armored_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>MA_Gimbal_Laser_T2_Armored</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+            <VoxelPlacement>
+                <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+                <StaticMode>
+                    <PlacementMode>OutsideVoxel</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </StaticMode>
+                <DynamicMode>
+                    <PlacementMode>OutsideVoxel</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0.01</MinAllowed>
+                </DynamicMode>
+            </VoxelPlacement>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>40</BuildTimeSeconds>
+            <!--OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture-->
+            <WeaponDefinitionId Subtype="MA_Laser" />
+            <InventoryMaxVolume>0.384</InventoryMaxVolume>
+            
+            <ResourceSinkGroup>Defense</ResourceSinkGroup>
+            <MinElevationDegrees>45</MinElevationDegrees>
+            <MaxElevationDegrees>90</MaxElevationDegrees>
+            <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+            <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+            <IdleRotation>true</IdleRotation>
+            <MaxRangeMeters>1000</MaxRangeMeters>
+            <RotationSpeed>0.007</RotationSpeed>
+            <ElevationSpeed>0.005 </ElevationSpeed>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <MinFov>0.1</MinFov>
+            <MaxFov>1.04719755</MaxFov>
+            <ShowEdges>false</ShowEdges>
+			<DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+			<DamagedSound>ParticleElectrical</DamagedSound>
+			<EmissiveColorPreset>Default</EmissiveColorPreset>
+			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+			<DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>100</PCU>
+        </Definition>
+
+<!-- MA_Gimbal_Laser_T2_Armored_Slope -->		
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+            <Id>
+                <TypeId>LargeMissileTurret</TypeId>
+                <SubtypeId>MA_Gimbal_Laser_T2_Armored_Slope</SubtypeId>
+            </Id>
+            <DisplayName>Gimbal Laser T2 Armored Slope</DisplayName>
+			<Description>Laser turret with upgraded power supply.
+Has restricted firing angle but is armored.			
+Lasers are strong against shields and weak against armor.
+Made by Allied Astronautical.</Description>
+            <Icon>Textures\Icons\MA_Gimbal_Laser_Armored_Slope.dds</Icon>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="4" z="1" />
+            <ModelOffset x="0" y="0" z="0" />
+			<ShowEdges>false</ShowEdges>
+	
+
+            <Model>Models\MA_Laser2\MA_Gimbal_Laser_T2_Armored_Slope.mwm</Model>
+            <UseModelIntersection>true</UseModelIntersection>
+            <Components>
+                <Component Subtype="SteelPlate" Count="15" />
+				<Component Subtype="Construction" Count="100" />
+				<Component Subtype="InteriorPlate" Count="10" />
+				<Component Subtype="SmallTube" Count="18" />
+                <Component Subtype="LargeTube" Count="8" />
+                <Component Subtype="Motor" Count="16" />
+				<Component Subtype="Superconductor" Count="60" />
+				<Component Subtype="BulletproofGlass" Count="15" /> 
+				<Component Subtype="Computer" Count="12" />
+                <Component Subtype="MetalGrid" Count="45" />
+                <Component Subtype="Construction" Count="30" />
+				<Component Subtype="SteelPlate" Count="100" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="1.0" EndY="4"/>
+				<MountPoint Side="Back" StartX="0.0" StartY="0.01" EndX="1.0" EndY="3.49"/>
+				<MountPoint Side="Left" StartX="0.0" StartY="0.0" EndX="1.0" EndY="4"/>
+				<MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="1.0" EndY="4"/>
+				<MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="1.0" EndY="1.0"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\MA_Laser2\MA_Gimbal_Laser_T2_Armored_Slope_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.66" File="Models\MA_Laser2\MA_Gimbal_Laser_T2_Armored_Slope_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.0" File="Models\MA_Laser2\MA_Gimbal_Laser_T2_Armored_Slope_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>MA_Gimbal_Laser_T2_Armored_Slope</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+            <VoxelPlacement>
+                <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+                <StaticMode>
+                    <PlacementMode>OutsideVoxel</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </StaticMode>
+                <DynamicMode>
+                    <PlacementMode>OutsideVoxel</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0.01</MinAllowed>
+                </DynamicMode>
+            </VoxelPlacement>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>40</BuildTimeSeconds>
+            <!--OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture-->
+            <WeaponDefinitionId Subtype="MA_Laser" />
+            <InventoryMaxVolume>0.384</InventoryMaxVolume>
+            
+            <ResourceSinkGroup>Defense</ResourceSinkGroup>
+            <MinElevationDegrees>45</MinElevationDegrees>
+            <MaxElevationDegrees>90</MaxElevationDegrees>
+            <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+            <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+            <IdleRotation>true</IdleRotation>
+            <MaxRangeMeters>1000</MaxRangeMeters>
+            <RotationSpeed>0.007</RotationSpeed>
+            <ElevationSpeed>0.005 </ElevationSpeed>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <MinFov>0.1</MinFov>
+            <MaxFov>1.04719755</MaxFov>
+            <ShowEdges>false</ShowEdges>
+			<DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+			<DamagedSound>ParticleElectrical</DamagedSound>
+			<EmissiveColorPreset>Default</EmissiveColorPreset>
+			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+			<DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>100</PCU>
+        </Definition>
+
+<!-- MA_Gimbal_Laser_T2_Armored_Slope2 -->		
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+            <Id>
+                <TypeId>LargeMissileTurret</TypeId>
+                <SubtypeId>MA_Gimbal_Laser_T2_Armored_Slope2</SubtypeId>
+            </Id>
+            <DisplayName>Gimbal Laser T2 Armored Slope 2</DisplayName>
+			<Description>Laser turret with upgraded power supply.
+Has restricted firing angle but is armored.			
+Lasers are strong against shields and weak against armor.
+Made by Allied Astronautical.</Description>
+            <Icon>Textures\Icons\MA_Gimbal_Laser_Armored_Slope2.dds</Icon>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="4" z="1" />
+            <ModelOffset x="0" y="0" z="0" />
+			<ShowEdges>false</ShowEdges>
+	
+
+            <Model>Models\MA_Laser2\MA_Gimbal_Laser_T2_Armored_Slope2.mwm</Model>
+            <UseModelIntersection>true</UseModelIntersection>
+            <Components>
+                <Component Subtype="SteelPlate" Count="15" />
+				<Component Subtype="Construction" Count="100" />
+				<Component Subtype="InteriorPlate" Count="10" />
+				<Component Subtype="SmallTube" Count="18" />
+                <Component Subtype="LargeTube" Count="8" />
+                <Component Subtype="Motor" Count="16" />
+				<Component Subtype="Superconductor" Count="60" />
+				<Component Subtype="BulletproofGlass" Count="15" /> 
+				<Component Subtype="Computer" Count="12" />
+                <Component Subtype="MetalGrid" Count="45" />
+                <Component Subtype="Construction" Count="30" />
+				<Component Subtype="SteelPlate" Count="100" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.0" StartY="0.01" EndX="1.0" EndY="4"/>
+				<MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="1.0" EndY="2.5"/>
+				<MountPoint Side="Left" StartX="0.0" StartY="0.01" EndX="1" EndY="4"/>
+				<MountPoint Side="Right" StartX="0.0" StartY="0.01" EndX="1.0" EndY="4"/>
+				<MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="1.0" EndY="1.0"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\MA_Laser2\MA_Gimbal_Laser_T2_Armored_Slope2_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.66" File="Models\MA_Laser2\MA_Gimbal_Laser_T2_Armored_Slope2_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.0" File="Models\MA_Laser2\MA_Gimbal_Laser_T2_Armored_Slope2_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>MA_Gimbal_Laser_T2_Armored_Slope2</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+            <VoxelPlacement>
+                <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+                <StaticMode>
+                    <PlacementMode>OutsideVoxel</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </StaticMode>
+                <DynamicMode>
+                    <PlacementMode>OutsideVoxel</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0.01</MinAllowed>
+                </DynamicMode>
+            </VoxelPlacement>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>40</BuildTimeSeconds>
+            <!--OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture-->
+            <WeaponDefinitionId Subtype="MA_Laser" />
+            <InventoryMaxVolume>0.384</InventoryMaxVolume>
+            
+            <ResourceSinkGroup>Defense</ResourceSinkGroup>
+            <MinElevationDegrees>45</MinElevationDegrees>
+            <MaxElevationDegrees>90</MaxElevationDegrees>
+            <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+            <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+            <IdleRotation>true</IdleRotation>
+            <MaxRangeMeters>1000</MaxRangeMeters>
+            <RotationSpeed>0.007</RotationSpeed>
+            <ElevationSpeed>0.005 </ElevationSpeed>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <MinFov>0.1</MinFov>
+            <MaxFov>1.04719755</MaxFov>
+            <ShowEdges>false</ShowEdges>
+			<DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+			<DamagedSound>ParticleElectrical</DamagedSound>
+			<EmissiveColorPreset>Default</EmissiveColorPreset>
+			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+			<DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>100</PCU>
+        </Definition>
+
+<!-- MA_Gimbal_Laser_T2_Armored_Slope45 -->		
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+            <Id>
+                <TypeId>LargeMissileTurret</TypeId>
+                <SubtypeId>MA_Gimbal_Laser_T2_Armored_Slope45</SubtypeId>
+            </Id>
+            <DisplayName>Gimbal Laser T2 Armored Slope 45</DisplayName>
+			<Description>Laser turret with upgraded power supply.
+Has restricted firing angle but is armored.			
+Lasers are strong against shields and weak against armor.
+Made by Allied Astronautical.</Description>
+            <Icon>Textures\Icons\MA_Gimbal_Laser_Armored_Slope45.dds</Icon>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="4" z="1" />
+            <ModelOffset x="0" y="0" z="0" />
+			<ShowEdges>false</ShowEdges>
+	
+
+            <Model>Models\MA_Laser2\MA_Gimbal_Laser_T2_Armored_Slope45.mwm</Model>
+            <UseModelIntersection>true</UseModelIntersection>
+            <Components>
+                <Component Subtype="SteelPlate" Count="15" />
+				<Component Subtype="Construction" Count="100" />
+				<Component Subtype="InteriorPlate" Count="10" />
+				<Component Subtype="SmallTube" Count="18" />
+                <Component Subtype="LargeTube" Count="8" />
+                <Component Subtype="Motor" Count="16" />
+				<Component Subtype="Superconductor" Count="60" />
+				<Component Subtype="BulletproofGlass" Count="15" /> 
+				<Component Subtype="Computer" Count="12" />
+                <Component Subtype="MetalGrid" Count="25" />
+                <Component Subtype="Construction" Count="30" />
+				<Component Subtype="SteelPlate" Count="65" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.0" StartY="0.01" EndX="1.0" EndY="3.99"/>
+				<MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="1.0" EndY="2.5"/>
+				<MountPoint Side="Left" StartX="0.0" StartY="0.01" EndX="1" EndY="3.99"/>
+				<MountPoint Side="Right" StartX="0.0" StartY="0.01" EndX="1.0" EndY="3.99"/>
+				<MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="1.0" EndY="1.0"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\MA_Laser2\MA_Gimbal_Laser_T2_Armored_Slope45_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.66" File="Models\MA_Laser2\MA_Gimbal_Laser_T2_Armored_Slope45_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.0" File="Models\MA_Laser2\MA_Gimbal_Laser_T2_Armored_Slope45_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>MA_Gimbal_Laser_T2_Armored_Slope45</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+            <VoxelPlacement>
+                <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+                <StaticMode>
+                    <PlacementMode>OutsideVoxel</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </StaticMode>
+                <DynamicMode>
+                    <PlacementMode>OutsideVoxel</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0.01</MinAllowed>
+                </DynamicMode>
+            </VoxelPlacement>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>40</BuildTimeSeconds>
+            <!--OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture-->
+            <WeaponDefinitionId Subtype="MA_Laser" />
+            <InventoryMaxVolume>0.384</InventoryMaxVolume>
+            
+            <ResourceSinkGroup>Defense</ResourceSinkGroup>
+            <MinElevationDegrees>45</MinElevationDegrees>
+            <MaxElevationDegrees>90</MaxElevationDegrees>
+            <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+            <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+            <IdleRotation>true</IdleRotation>
+            <MaxRangeMeters>1000</MaxRangeMeters>
+            <RotationSpeed>0.007</RotationSpeed>
+            <ElevationSpeed>0.005 </ElevationSpeed>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <MinFov>0.1</MinFov>
+            <MaxFov>1.04719755</MaxFov>
+            <ShowEdges>false</ShowEdges>
+			<DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+			<DamagedSound>ParticleElectrical</DamagedSound>
+			<EmissiveColorPreset>Default</EmissiveColorPreset>
+			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+			<DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>100</PCU>
+        </Definition>
+
+
+
+
+
+
+
+
+
 
 		
 <!-- MA_Gimbal_Laser_Armored_sb -->
@@ -986,6 +1492,7 @@ Made by AutoMcD Astronautical.</Description>
 			<EmissiveColorPreset>Default</EmissiveColorPreset>
 			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
 			<DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>100</PCU>
         </Definition>
 		
 <!-- MA_Gimbal_Laser_Armored_Slope_sb-->		
@@ -1074,6 +1581,7 @@ Made by AutoMcD Astronautical.</Description>
 			<EmissiveColorPreset>Default</EmissiveColorPreset>
 			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
 			<DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>100</PCU>
         </Definition>
 
 <!-- MA_Gimbal_Laser_Armored_Slope2_sb -->
@@ -1158,6 +1666,7 @@ Made by AutoMcD Astronautical.</Description>
 			<EmissiveColorPreset>Default</EmissiveColorPreset>
 			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
 			<DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>100</PCU>
         </Definition>
 
 <!-- MA_Gimbal_Laser_Armored_Slope45_sb -->		
@@ -1246,6 +1755,7 @@ Made by AutoMcD Astronautical.</Description>
 			<EmissiveColorPreset>Default</EmissiveColorPreset>
 			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
 			<DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>100</PCU>
         </Definition>
 		
 <!-- MA_Gimbal_Laser_sb -->		
@@ -1359,7 +1869,8 @@ Made by AutoMcD Astronautical.</Description>
 			<EmissiveColorPreset>Default</EmissiveColorPreset>
 			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
 			<DestroySound>WepSmallWarheadExpl</DestroySound>
-        </Definition>
+       <PCU>100</PCU>
+ </Definition>
 
 
 
@@ -1460,7 +1971,7 @@ Made by AutoMcD Astronautical.</Description>
           <SubtypeId>MA_Fixed_006</SubtypeId>
         </BlockVariant>
       </BlockVariants>
-		
+      <PCU>100</PCU>		
     </Definition>
 
 <!-- MA_Fixed_001 -->
@@ -1521,6 +2032,7 @@ Made by AutoMcD Astronautical.</Description>
 			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
 			<DestroySound>WepSmallWarheadExpl</DestroySound>
 	<GuiVisible>false</GuiVisible>
+      <PCU>100</PCU>
     </Definition>
 
 <!-- MA_Fixed_002 -->
@@ -1583,6 +2095,7 @@ Made by AutoMcD Astronautical.</Description>
 			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
 			<DestroySound>WepSmallWarheadExpl</DestroySound>
     <GuiVisible>false</GuiVisible>
+      <PCU>100</PCU>
 	</Definition>
 
 <!-- MA_Fixed_003 -->
@@ -1641,6 +2154,7 @@ Made by AutoMcD Astronautical.</Description>
 			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
 			<DestroySound>WepSmallWarheadExpl</DestroySound>
     <GuiVisible>false</GuiVisible>
+      <PCU>100</PCU>
 	</Definition>
 
 <!-- MA_Fixed_004 -->
@@ -1698,6 +2212,7 @@ Made by AutoMcD Astronautical.</Description>
 			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
 			<DestroySound>WepSmallWarheadExpl</DestroySound>
     <GuiVisible>false</GuiVisible>
+      <PCU>100</PCU>
 	</Definition>
 
 <!-- MA_Fixed_005 -->
@@ -1759,6 +2274,7 @@ Made by AutoMcD Astronautical.</Description>
 			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
 			<DestroySound>WepSmallWarheadExpl</DestroySound>
     <GuiVisible>false</GuiVisible>
+      <PCU>100</PCU>
 	</Definition>
 
 <!-- MA_Fixed_006 -->
@@ -1819,6 +2335,7 @@ Made by AutoMcD Astronautical.</Description>
 			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
 			<DestroySound>WepSmallWarheadExpl</DestroySound>
     <GuiVisible>false</GuiVisible>
+      <PCU>100</PCU>
 	</Definition>
 
 <!-- MA_Fixed_007 -->
@@ -1876,6 +2393,7 @@ Made by AutoMcD Astronautical.</Description>
 			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
 			<DestroySound>WepSmallWarheadExpl</DestroySound>
     <GuiVisible>false</GuiVisible>
+      <PCU>100</PCU>
 	</Definition>
 
 
@@ -1918,6 +2436,7 @@ Made by AutoMcD Astronautical.</Description>
       <BuildTimeSeconds>18</BuildTimeSeconds>
 	  
 	  <GuiVisible>false</GuiVisible>
+      <PCU>1</PCU>
     </Definition>		
 
 <!-- MA_Fixed_slope -->
@@ -1955,6 +2474,7 @@ Made by AutoMcD Astronautical.</Description>
       <BuildTimeSeconds>18</BuildTimeSeconds>
 	  
 	  <GuiVisible>false</GuiVisible>
+      <PCU>1</PCU>
     </Definition>		
 
 
@@ -2051,7 +2571,7 @@ Made by AutoMcD Astronautical.</Description>
           <SubtypeId>MA_Fixed_sb_006</SubtypeId>
         </BlockVariant>
       </BlockVariants>
-		
+      <PCU>100</PCU>		
     </Definition>
 
 <!-- MA_Fixed_sb_001 -->
@@ -2112,6 +2632,7 @@ Made by AutoMcD Astronautical.</Description>
 			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
 			<DestroySound>WepSmallWarheadExpl</DestroySound>
 	<GuiVisible>false</GuiVisible>
+      <PCU>100</PCU>
     </Definition>
 
 <!-- MA_Fixed_sb_002 -->
@@ -2174,6 +2695,7 @@ Made by AutoMcD Astronautical.</Description>
 			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
 			<DestroySound>WepSmallWarheadExpl</DestroySound>
     <GuiVisible>false</GuiVisible>
+      <PCU>100</PCU>
 	</Definition>
 
 <!-- MA_Fixed_sb_003 -->
@@ -2232,6 +2754,7 @@ Made by AutoMcD Astronautical.</Description>
 			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
 			<DestroySound>WepSmallWarheadExpl</DestroySound>
     <GuiVisible>false</GuiVisible>
+      <PCU>100</PCU>
 	</Definition>
 
 <!-- MA_Fixed_sb_004 -->
@@ -2289,6 +2812,7 @@ Made by AutoMcD Astronautical.</Description>
 			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
 			<DestroySound>WepSmallWarheadExpl</DestroySound>
     <GuiVisible>false</GuiVisible>
+      <PCU>100</PCU>
 	</Definition>
 
 <!-- MA_Fixed_sb_005 -->
@@ -2350,6 +2874,7 @@ Made by AutoMcD Astronautical.</Description>
 			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
 			<DestroySound>WepSmallWarheadExpl</DestroySound>
     <GuiVisible>false</GuiVisible>
+      <PCU>100</PCU>
 	</Definition>
 
 <!-- MA_Fixed_sb_006 -->
@@ -2410,6 +2935,7 @@ Made by AutoMcD Astronautical.</Description>
 			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
 			<DestroySound>WepSmallWarheadExpl</DestroySound>
     <GuiVisible>false</GuiVisible>
+      <PCU>100</PCU>
 	</Definition>
 
 <!-- MA_Fixed_sb_007 -->
@@ -2467,6 +2993,7 @@ Made by AutoMcD Astronautical.</Description>
 			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
 			<DestroySound>WepSmallWarheadExpl</DestroySound>
     <GuiVisible>false</GuiVisible>
+      <PCU>100</PCU>
 	</Definition>
 
 
@@ -2515,7 +3042,8 @@ Made by AutoMcD Astronautical.</Description>
       <BuildTimeSeconds>18</BuildTimeSeconds>
 	  
 	  <GuiVisible>false</GuiVisible>
-    </Definition>		
+      <PCU>1</PCU> 
+ </Definition>		
 
 <!-- MA_Fixed_sb_slope -->
 	<Definition>
@@ -2551,6 +3079,7 @@ Made by AutoMcD Astronautical.</Description>
       <BuildTimeSeconds>18</BuildTimeSeconds>
 	  
 	  <GuiVisible>false</GuiVisible>
+      <PCU>1</PCU>
     </Definition>		
 
 

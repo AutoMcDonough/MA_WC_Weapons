@@ -9,7 +9,9 @@
       </Id>
       <Category>WEP_SHIP</Category>
       <MaxDistance>800</MaxDistance>
-      <Volume>.5</Volume>
+      <Volume>.3</Volume>
+	  <PreventSynchronization>1</PreventSynchronization>
+      <SoundLimit>6</SoundLimit>
       <Loopable>false</Loopable>
       <Waves>
         <Wave Type="D3">
@@ -25,7 +27,9 @@
       </Id>
       <Category>WEP_SHIP</Category>
       <MaxDistance>400</MaxDistance>
-      <Volume>.3</Volume>
+      <Volume>.2</Volume>
+	  <PreventSynchronization>1</PreventSynchronization>
+      <SoundLimit>6</SoundLimit>
       <Loopable>false</Loopable>
       <Waves>
         <Wave Type="D3">
@@ -42,6 +46,8 @@
       <Category>WEP_SHIP</Category>
       <MaxDistance>30</MaxDistance>
       <Volume>.2</Volume>
+	  <PreventSynchronization>1</PreventSynchronization>
+      <SoundLimit>6</SoundLimit>
       <Loopable>false</Loopable>
       <Waves>
         <Wave Type="D3">
@@ -58,6 +64,8 @@
       <Category>WEP_SHIP</Category>
       <MaxDistance>15</MaxDistance>
       <Volume>.2</Volume>
+	  <PreventSynchronization>1</PreventSynchronization>
+      <SoundLimit>6</SoundLimit>
       <Loopable>false</Loopable>
       <Waves>
         <Wave Type="D3">
