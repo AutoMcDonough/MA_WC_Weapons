@@ -604,6 +604,7 @@ namespace WeaponThread
             BackKickForce = 0f,
 			DecayPerShot = 0f,            
             HardPointUsable = true,
+            EnergyMagazineSize = 60,
             IgnoreWater = false,
 
             Shape = new ShapeDef //defines the collision shape of projectile, defaults line and visual Line Length if set to 0
@@ -760,43 +761,58 @@ namespace WeaponThread
                     {
                         Name = "", //ShipWelderArc
                         ShrinkByDistance = false,
-                        Color = Color(red: 128, green: 0, blue: 0, alpha: 32),
-                        Offset = Vector(x: 0, y: -1, z: 0),
+                        Color = Color(red: 1, green: 1, blue: 1, alpha: 1),
+                        Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
                         {
                             Loop = true,
                             Restart = false,
-                            MaxDistance = 5000,
-                            MaxDuration = 1,
+                            MaxDistance = 1000,
+                            MaxDuration = 0,
                             Scale = 1,
                         },
                     },
                     Hit = new ParticleDef
                     {
-                        Name = "", //MA_laserhit
+                        Name = "LaserHitParticlesGimbal",//LaserHitParticlesGimbal
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
-                        Color = Color(red: 25, green: 20, blue: 5, alpha: 1),
-                        Offset = Vector(x: 0, y: -1, z: 0),
+                        ShrinkByDistance = true,
+                        Color = Color(red: 10, green: 2, blue: 1, alpha: 0.8f),
+                        Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
                         {
-                            Loop = false,
+                            Loop = true,
+                            Restart = false,
+                            MaxDistance = 500,
+                            MaxDuration = 0,
+                            Scale = 20,
+                            HitPlayChance = 1,
+                        },
+                    },
+                    Eject = new ParticleDef
+                    {
+                        Name = "",
+                        ApplyToShield = true,
+                        ShrinkByDistance = false,
+                        Color = Color(red: 3, green: 1.9f, blue: 1f, alpha: 1),
+                        Offset = Vector(x: 0, y: 0, z: 0),
+                        Extras = new ParticleOptionDef
+                        {
+                            Loop = true,
                             Restart = false,
                             MaxDistance = 5000,
-                            MaxDuration = 1,
+                            MaxDuration = 30,
                             Scale = 1,
                             HitPlayChance = 1f,
                         },
                     },
                 },
+
                 Lines = new LineDef
                 {
-                    TracerMaterial = "WeaponLaser", // WeaponLaser, ProjectileTrailLine, WarpBubble, etc..
                     ColorVariance = Random(start: 0.8f, end: 1f), // multiply the color by random values within range.
                     WidthVariance = Random(start: -.05f, end: 0f), // adds random value to default width (negatives shrinks width)
- 
-
-                   Tracer = new TracerBaseDef
+                    Tracer = new TracerBaseDef
                     {
                         Enable = true,
                         Length = 1f,
@@ -812,7 +828,7 @@ namespace WeaponThread
                         {
                             Enable = true, // If true Tracer TextureMode is ignored
                             Textures = new[] {
-                                "WeaponLaser",
+								"WeaponLaser",
                             },
                             SegmentLength = 20f, // Uses the values below.
                             SegmentGap = 15f, // Uses Tracer textures and values
@@ -825,29 +841,25 @@ namespace WeaponThread
                             ColorVariance = Random(start: 0.6f, end: 1f)
                         }
                     },
-
-
-
-
-
-
-
                     Trail = new TrailDef
                     {
                         Enable = false,
-                        Material = "WeaponLaser",
-                        DecayTime = 30,
-                        Color = Color(red: 10, green: 0, blue: 0, alpha: 1),
+                        Textures = new[] {
+							"",
+                        },
+                        TextureMode = Normal,
+                        DecayTime = 128,
+                        Color = Color(red: 0, green: 0, blue: 1, alpha: 1),
                         Back = false,
-                        CustomWidth = 0.1f,
-                        UseWidthVariance = true,
+                        CustomWidth = 0,
+                        UseWidthVariance = false,
                         UseColorFade = true,
                     },
                     OffsetEffect = new OffsetEffectDef
                     {
                         MaxOffset = 0,// 0 offset value disables this effect
-                        MinLength = 1,
-                        MaxLength = 1,
+                        MinLength = 0.2f,
+                        MaxLength = 3,
                     },
                 },
             },
@@ -1053,26 +1065,22 @@ namespace WeaponThread
                     },
                     Hit = new ParticleDef
                     {
-                        Name = "", //MA_laserhit
+                        Name = "Big_melting_laser_hit", //MA_laserhit
                         ApplyToShield = true,
                         ShrinkByDistance = false,
-                        Color = Color(red: 25, green: 20, blue: 5, alpha: 1),
+                        Color = Color(red: 1, green: 1, blue: 1, alpha: 1),
                         Offset = Vector(x: 0, y: -1, z: 0),
                         Extras = new ParticleOptionDef
                         {
                             Loop = false,
                             Restart = false,
-                            MaxDistance = 5000,
-                            MaxDuration = 1,
+                            MaxDistance = 1000,
+                            MaxDuration = 0,
                             Scale = 1,
                             HitPlayChance = 1f,
                         },
                     },
                 },
-				
- 
-
-
 
                Lines = new LineDef
                 {
