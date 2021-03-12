@@ -23,6 +23,7 @@ namespace WeaponThread
                 [ProtoMember(1)] internal MountPointDef[] MountPoints;
                 [ProtoMember(2)] internal string[] Barrels;
                 [ProtoMember(3)] internal string Ejector;
+                [ProtoMember(4)] internal string Scope;
 
                 [ProtoContract]
                 public struct MountPointDef
@@ -252,6 +253,7 @@ namespace WeaponThread
                     [ProtoMember(3)] internal bool TurretController;
                     [ProtoMember(4)] internal bool PrimaryTracking;
                     [ProtoMember(5)] internal bool LockOnFocus;
+                    [ProtoMember(6)] internal bool SuppressFire;
                 }
 
                 [ProtoContract]
@@ -297,6 +299,9 @@ namespace WeaponThread
                     [ProtoMember(3)] internal int RotateBarrelAxis;
                     [ProtoMember(4)] internal bool MuzzleCheck;
                     [ProtoMember(5)] internal bool Debug;
+                    [ProtoMember(6)] internal double RestrictionRadius;
+                    [ProtoMember(7)] internal bool CheckInflatedBox;
+                    [ProtoMember(8)] internal bool CheckForAnyWeapon;
                 }
 
                 [ProtoContract]
@@ -729,6 +734,7 @@ namespace WeaponThread
                         [ProtoMember(7)] internal int MaxTargets;
                         [ProtoMember(8)] internal bool NoTargetExpire;
                         [ProtoMember(9)] internal bool Roam;
+                        [ProtoMember(10)] internal bool KeepAliveAfterTargetLoss;
                     }
 
                     [ProtoContract]
@@ -772,6 +778,18 @@ namespace WeaponThread
                 [ProtoMember(5)] internal bool ApplyToShield;
                 [ProtoMember(6)] internal bool ShrinkByDistance;
             }
+        }
+    
+        [ProtoContract]
+        public struct ArmorCompatibilityDef
+        {
+            internal enum ArmorType
+            {
+                Light,
+                Heavy,
+            }
+            [ProtoMember(1)] internal string SubtypeId;
+            [ProtoMember(2)] internal ArmorType Kind;
         }
     }
 }
