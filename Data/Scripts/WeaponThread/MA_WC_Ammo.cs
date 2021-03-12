@@ -1069,15 +1069,15 @@ namespace WeaponThread
                         ApplyToShield = true,
                         ShrinkByDistance = false,
                         Color = Color(red: 1, green: 1, blue: 1, alpha: 1),
-                        Offset = Vector(x: 0, y: -1, z: 0),
+                        Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
                         {
                             Loop = false,
                             Restart = false,
-                            MaxDistance = 1000,
+                            MaxDistance = 800,
                             MaxDuration = 0,
                             Scale = 1,
-                            HitPlayChance = 1f,
+                            HitPlayChance = 0.5f,
                         },
                     },
                 },
