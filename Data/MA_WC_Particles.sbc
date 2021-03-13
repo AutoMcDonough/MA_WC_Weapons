@@ -28044,6 +28044,8 @@
 				</ParticleLight>
 			</ParticleLights>
 		</ParticleEffect>
+
+
 		<!-- new gladius hit particle by Mike Dude -->
 		<ParticleEffect xsi:type="ParticleEffect">
 			<Id Type="MyObjectBuilder_ParticleEffect" Subtype="Big_melting_laser_hit"/>
