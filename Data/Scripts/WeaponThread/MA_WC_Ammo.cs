@@ -1511,6 +1511,7 @@ namespace WeaponThread
             BackKickForce = 0f,
 			DecayPerShot = 0f,            
             HardPointUsable = true,
+            EnergyMagazineSize = 1,
             IgnoreWater = false,
 
             Shape = new ShapeDef //defines the collision shape of projectile, defaults line and visual Line Length if set to 0
@@ -1536,7 +1537,7 @@ namespace WeaponThread
                 MaxIntegrity = 0f, // 0 = disabled, 1000 = any blocks with currently integrity above 1000 will be immune to damage.
                 DamageVoxels = false, // true = voxels are vulnerable to this weapon
                 SelfDamage = false, // true = allow self damage.
-                HealthHitModifier = 0.3, // defaults to a value of 1, this setting modifies how much Health is subtracted from a projectile per hit (1 = per hit).
+                HealthHitModifier = 2, // defaults to a value of 1, this setting modifies how much Health is subtracted from a projectile per hit (1 = per hit).
 
 
                 // modifier values: -1 = disabled (higher performance), 0 = no damage, 0.01 = 1% damage, 2 = 200% damage.
@@ -1681,36 +1682,36 @@ namespace WeaponThread
                     },
                     Hit = new ParticleDef
                     {
-                        Name = "", //MA_laserhit
+                        Name = "LaserHitParticlesGimbal",//LaserHitParticlesGimbal
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
-                        Color = Color(red: 25, green: 20, blue: 5, alpha: 1),
-                        Offset = Vector(x: 0, y: -1, z: 0),
+                        ShrinkByDistance = true,
+                        Color = Color(red: 5, green: 2, blue: 5, alpha: 0.8f),
+                        Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
                         {
-                            Loop = false,
+                            Loop = true,
                             Restart = false,
-                            MaxDistance = 5000,
-                            MaxDuration = 1,
-                            Scale = 1,
-                            HitPlayChance = 1f,
+                            MaxDistance = 500,
+                            MaxDuration = 0,
+                            Scale = 15,
+                            HitPlayChance = 1,
                         },
                     },
                 },
                 Lines = new LineDef
                 {
                     TracerMaterial = "WeaponLaser", // WeaponLaser, ProjectileTrailLine, WarpBubble, etc..
-                    ColorVariance = Random(start: 0.85f, end: 1f), // multiply the color by random values within range.
-                    WidthVariance = Random(start: -.005f, end: 0.005f), // adds random value to default width (negatives shrinks width)
+                    ColorVariance = Random(start: 0.75f, end: 1.25f), // multiply the color by random values within range.
+                    WidthVariance = Random(start: -.01f, end: 0.01f), // adds random value to default width (negatives shrinks width)
 
                    Tracer = new TracerBaseDef
                     {
                         Enable = true,
                         Length = 1f,
                         Width = .1f,
-                        Color = Color(red: 3, green: 0, blue: 3, alpha: .9f),
-                        VisualFadeStart = 2, // Number of ticks the weapon has been firing before projectiles begin to fade their color
-                        VisualFadeEnd = 30, // How many ticks after fade began before it will be invisible.
+                        Color = Color(red: 5, green: 1, blue: 15, alpha: 1f),
+                        VisualFadeStart = 0, // Number of ticks the weapon has been firing before projectiles begin to fade their color
+                        VisualFadeEnd = 5, // How many ticks after fade began before it will be invisible.
                         Textures = new[] {// WeaponLaser, ProjectileTrailLine, WarpBubble, etc..
                             "WeaponLaser",
                         },
@@ -1724,7 +1725,7 @@ namespace WeaponThread
                             SegmentLength = 5f, // Uses the values below.
                             SegmentGap = 3f, // Uses Tracer textures and values
                             Speed = 60f, // meters per second
-                            Color = Color(red: 10, green: 0, blue: 10, alpha: .7f),
+							Color = Color(red: 5, green: 2, blue: 9, alpha: 1),
                             WidthMultiplier = .9f,
                             Reverse = false,
                             UseLineVariance = true,
@@ -1732,25 +1733,14 @@ namespace WeaponThread
                             ColorVariance = Random(start: 0.6f, end: 1f)
                         }
                     },
-
-
-
-
-
-
-
-
-
-
-
                     Trail = new TrailDef
                     {
-                        Enable = false,
+                        Enable = true,
                         Material = "WeaponLaser",
-                        DecayTime = 20,
-                        Color = Color(red: 1, green: 0, blue: 1, alpha: .8f),
+                        DecayTime = 10,
+						Color = Color(red: 5, green: 2, blue: 9, alpha: 1),
                         Back = false,
-                        CustomWidth = 0.02f,
+                        CustomWidth = 0.05f,
                         UseWidthVariance = true,
                         UseColorFade = true,
                     },
@@ -1951,19 +1941,19 @@ namespace WeaponThread
                     },
                     Hit = new ParticleDef
                     {
-                        Name = "", //MA_laserhit
+                        Name = "LaserHitParticlesGimbal",//LaserHitParticlesGimbal
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
-                        Color = Color(red: 25, green: 20, blue: 5, alpha: 1),
-                        Offset = Vector(x: 0, y: -1, z: 0),
+                        ShrinkByDistance = true,
+                        Color = Color(red: 10, green: 2, blue: 1, alpha: 0.8f),
+                        Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
                         {
-                            Loop = false,
+                            Loop = true,
                             Restart = false,
-                            MaxDistance = 5000,
-                            MaxDuration = 1,
-                            Scale = 1,
-                            HitPlayChance = 1f,
+                            MaxDistance = 500,
+                            MaxDuration = 0,
+                            Scale = 30,
+                            HitPlayChance = 1,
                         },
                     },
                 },
@@ -2051,6 +2041,7 @@ namespace WeaponThread
             BackKickForce = 0f,
 			DecayPerShot = 0f,            
             HardPointUsable = true,
+            EnergyMagazineSize = 120,
             IgnoreWater = false,
 
             Shape = new ShapeDef //defines the collision shape of projectile, defaults line and visual Line Length if set to 0
@@ -2219,19 +2210,19 @@ namespace WeaponThread
                     },
                     Hit = new ParticleDef
                     {
-                        Name = "", //MA_laserhit
+                        Name = "LaserHitParticlesGimbal",//LaserHitParticlesGimbal
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
-                        Color = Color(red: 25, green: 20, blue: 5, alpha: 1),
-                        Offset = Vector(x: 0, y: -1, z: 0),
+                        ShrinkByDistance = true,
+                        Color = Color(red: 10, green: 2, blue: 1, alpha: 0.8f),
+                        Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
                         {
-                            Loop = false,
+                            Loop = true,
                             Restart = false,
-                            MaxDistance = 5000,
-                            MaxDuration = 1,
-                            Scale = 1,
-                            HitPlayChance = 1f,
+                            MaxDistance = 500,
+                            MaxDuration = 0,
+                            Scale = 30,
+                            HitPlayChance = 1,
                         },
                     },
                 },
