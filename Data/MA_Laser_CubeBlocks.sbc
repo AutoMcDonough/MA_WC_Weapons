@@ -261,6 +261,273 @@
       <PCU>100</PCU>
         </Definition>	
 
+<!-- MA_T2PDX -->
+   <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+            <Id>
+                <TypeId>ConveyorSorter</TypeId>
+                <SubtypeId>MA_T2PDX</SubtypeId>
+            </Id>
+            <DisplayName>PDX Laser T2</DisplayName>
+			<Description>General purpose laser turret, upgraded for more damage capability. 
+Lasers are strong against shields and weak against armor.
+Made by AutoMcD Astronautical and CriegWarfare.</Description>
+            <Icon>Textures\GUI\Icons\Cubes\MA_T2PDX.png</Icon>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="2" y="2" z="2" />
+            <ModelOffset x="0" y="0" z="0" />
+			<ShowEdges>false</ShowEdges>
+			<GuiVisible>true</GuiVisible>
+            <Model>Models\MA_Laser2\MA_T2PDX.mwm</Model>
+            <UseModelIntersection>true</UseModelIntersection>
+            <Components>
+                <Component Subtype="SteelPlate" Count="15" />
+				<Component Subtype="Construction" Count="10" />
+				<Component Subtype="InteriorPlate" Count="40" />
+				<Component Subtype="SmallTube" Count="8" />
+                <Component Subtype="LargeTube" Count="12" />
+                <Component Subtype="Motor" Count="16" />
+				<Component Subtype="Superconductor" Count="50" />
+				<Component Subtype="BulletproofGlass" Count="10" /> 
+				<Component Subtype="Computer" Count="12" />
+                <Component Subtype="MetalGrid" Count="5" />
+                <Component Subtype="Construction" Count="130" />
+				<Component Subtype="SteelPlate" Count="130" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="2.0" EndY="2.0"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\MA_Laser2\MA_T2PDX_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.66" File="Models\MA_Laser2\MA_T2PDX_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.0" File="Models\MA_Laser2\MA_T2PDX_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>MA_T2PDX</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+            <VoxelPlacement>
+                <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+                <StaticMode>
+                    <PlacementMode>OutsideVoxel</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </StaticMode>
+                <DynamicMode>
+                    <PlacementMode>OutsideVoxel</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0.01</MinAllowed>
+                </DynamicMode>
+            </VoxelPlacement>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>40</BuildTimeSeconds>
+            <!--OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture-->
+            <WeaponDefinitionId Subtype="MA_Laser" />
+            <InventoryMaxVolume>0.384</InventoryMaxVolume>
+            <MinElevationDegrees>-20</MinElevationDegrees>
+            <MaxElevationDegrees>90</MaxElevationDegrees>
+            <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+            <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+            <IdleRotation>true</IdleRotation>
+            <MaxRangeMeters>8000</MaxRangeMeters>
+            <RotationSpeed>0.007</RotationSpeed>
+            <ElevationSpeed>0.005 </ElevationSpeed>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <MinFov>0.1</MinFov>
+            <MaxFov>1.04719755</MaxFov>
+            <ShowEdges>false</ShowEdges>
+			<AiEnabled>false</AiEnabled>
+			<DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+			<DamagedSound>ParticleElectrical</DamagedSound>
+			<EmissiveColorPreset>Default</EmissiveColorPreset>
+			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+			<DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>100</PCU> 
+ </Definition>
+
+<!-- MA_T2PDX_Slope -->
+   <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+            <Id>
+                <TypeId>ConveyorSorter</TypeId>
+                <SubtypeId>MA_T2PDX_Slope</SubtypeId>
+            </Id>
+            <DisplayName>PDX Laser T2 Slope</DisplayName>
+			<Description>General purpose laser turret, upgraded for more damage capability. 
+Lasers are strong against shields and weak against armor.
+Made by AutoMcD Astronautical and CriegWarfare.</Description>
+            <Icon>Textures\GUI\Icons\Cubes\MA_T2PDX_Slope.png</Icon>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="2" y="3" z="3" />
+            <ModelOffset x="0" y="0" z="0" />
+			<ShowEdges>false</ShowEdges>
+			<GuiVisible>true</GuiVisible>
+            <Model>Models\MA_Laser2\MA_T2PDX_Slope.mwm</Model>
+            <UseModelIntersection>true</UseModelIntersection>
+            <Components>
+                <Component Subtype="SteelPlate" Count="15" />
+				<Component Subtype="Construction" Count="10" />
+				<Component Subtype="InteriorPlate" Count="40" />
+				<Component Subtype="SmallTube" Count="8" />
+                <Component Subtype="LargeTube" Count="12" />
+                <Component Subtype="Motor" Count="32" />
+				<Component Subtype="Superconductor" Count="50" />
+				<Component Subtype="BulletproofGlass" Count="10" /> 
+				<Component Subtype="Computer" Count="12" />
+                <Component Subtype="MetalGrid" Count="15" />
+                <Component Subtype="Construction" Count="130" />
+				<Component Subtype="SteelPlate" Count="130" />
+                <Component Subtype="MetalGrid" Count="100" />
+				<Component Subtype="SteelPlate" Count="400" />			   
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="2.0" EndY="2.0"/>
+				<MountPoint Side="Left" StartX="2.0" StartY="0.0" EndX="3.0" EndY="2.0"/>
+				<MountPoint Side="Left" StartX="1.0" StartY="0.0" EndX="2.0" EndY="1.0"/>
+				<MountPoint Side="Right" StartX="1.0" StartY="0.0" EndX="2.0" EndY="1.0"/>
+				<MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="1.0" EndY="2.0"/>
+				<MountPoint Side="Bottom" StartX="0.0" StartY="1.0" EndX="2.0" EndY="3.0"/>
+			</MountPoints>
+			<BlockPairName>MA_T2PDX_Slope</BlockPairName>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\MA_Laser2\MA_T2PDX_Slope_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.66" File="Models\MA_Laser2\MA_T2PDX_Slope_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.0" File="Models\MA_Laser2\MA_T2PDX_Slope_BS3.mwm"/>
+			</BuildProgressModels>
+
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+            <VoxelPlacement>
+                <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+                <StaticMode>
+                    <PlacementMode>OutsideVoxel</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </StaticMode>
+                <DynamicMode>
+                    <PlacementMode>OutsideVoxel</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0.01</MinAllowed>
+                </DynamicMode>
+            </VoxelPlacement>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>40</BuildTimeSeconds>
+            <!--OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture-->
+            <WeaponDefinitionId Subtype="MA_Laser" />
+            <InventoryMaxVolume>0.384</InventoryMaxVolume>
+            <MinElevationDegrees>-20</MinElevationDegrees>
+            <MaxElevationDegrees>90</MaxElevationDegrees>
+            <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+            <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+            <IdleRotation>true</IdleRotation>
+            <MaxRangeMeters>8000</MaxRangeMeters>
+            <RotationSpeed>0.007</RotationSpeed>
+            <ElevationSpeed>0.005 </ElevationSpeed>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <MinFov>0.1</MinFov>
+            <MaxFov>1.04719755</MaxFov>
+            <ShowEdges>false</ShowEdges>
+			<AiEnabled>false</AiEnabled>
+			<DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+			<DamagedSound>ParticleElectrical</DamagedSound>
+			<EmissiveColorPreset>Default</EmissiveColorPreset>
+			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+			<DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>100</PCU> 
+ </Definition>
+
+
+<!-- MA_T2PDX_Slope2 -->
+   <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+            <Id>
+                <TypeId>ConveyorSorter</TypeId>
+                <SubtypeId>MA_T2PDX_Slope2</SubtypeId>
+            </Id>
+            <DisplayName>PDX Laser T2 Slope2</DisplayName>
+			<Description>General purpose laser turret, upgraded for more damage capability. 
+Lasers are strong against shields and weak against armor.
+Made by AutoMcD Astronautical and CriegWarfare.</Description>
+            <Icon>Textures\GUI\Icons\Cubes\MA_T2PDX_Slope2.png</Icon>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="2" y="3" z="3" />
+            <ModelOffset x="0" y="0" z="0" />
+			<ShowEdges>false</ShowEdges>
+			<GuiVisible>true</GuiVisible>
+            <Model>Models\MA_Laser2\MA_T2PDX_Slope2.mwm</Model>
+            <UseModelIntersection>true</UseModelIntersection>
+            <Components>
+                <Component Subtype="SteelPlate" Count="15" />
+				<Component Subtype="Construction" Count="10" />
+				<Component Subtype="InteriorPlate" Count="40" />
+				<Component Subtype="SmallTube" Count="8" />
+                <Component Subtype="LargeTube" Count="12" />
+                <Component Subtype="Motor" Count="32" />
+				<Component Subtype="Superconductor" Count="50" />
+				<Component Subtype="BulletproofGlass" Count="10" /> 
+				<Component Subtype="Computer" Count="12" />
+                <Component Subtype="MetalGrid" Count="15" />
+                <Component Subtype="Construction" Count="130" />
+				<Component Subtype="SteelPlate" Count="130" />
+                <Component Subtype="MetalGrid" Count="75" />
+				<Component Subtype="SteelPlate" Count="300" />			   
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="2.0" EndY="1.0"/>
+				<MountPoint Side="Left" StartX="1.0" StartY="0.0" EndX="3.0" EndY="1.0"/>
+				<MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="2.0" EndY="1.0"/>
+				<MountPoint Side="Bottom" StartX="0.0" StartY="1.0" EndX="2.0" EndY="3.0"/>
+			</MountPoints>
+			<BlockPairName>MA_T2PDX_Slope2</BlockPairName>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\MA_Laser2\MA_T2PDX_Slope2_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.66" File="Models\MA_Laser2\MA_T2PDX_Slope2_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.0" File="Models\MA_Laser2\MA_T2PDX_Slope2_BS3.mwm"/>
+			</BuildProgressModels>
+
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+            <VoxelPlacement>
+                <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+                <StaticMode>
+                    <PlacementMode>OutsideVoxel</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </StaticMode>
+                <DynamicMode>
+                    <PlacementMode>OutsideVoxel</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0.01</MinAllowed>
+                </DynamicMode>
+            </VoxelPlacement>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>40</BuildTimeSeconds>
+            <!--OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture-->
+            <WeaponDefinitionId Subtype="MA_Laser" />
+            <InventoryMaxVolume>0.384</InventoryMaxVolume>
+            <MinElevationDegrees>-20</MinElevationDegrees>
+            <MaxElevationDegrees>90</MaxElevationDegrees>
+            <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+            <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+            <IdleRotation>true</IdleRotation>
+            <MaxRangeMeters>8000</MaxRangeMeters>
+            <RotationSpeed>0.007</RotationSpeed>
+            <ElevationSpeed>0.005 </ElevationSpeed>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <MinFov>0.1</MinFov>
+            <MaxFov>1.04719755</MaxFov>
+            <ShowEdges>false</ShowEdges>
+			<AiEnabled>false</AiEnabled>
+			<DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+			<DamagedSound>ParticleElectrical</DamagedSound>
+			<EmissiveColorPreset>Default</EmissiveColorPreset>
+			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+			<DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>100</PCU> 
+ </Definition>
+
 
 <!-- PDT large -->
     <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
@@ -819,26 +1086,7 @@ Made by AutoMcD Astronautical.</Description>
           <TypeId>LargeMissileTurret</TypeId>
           <SubtypeId>MA_Gimbal_Laser_Armored_Slope45</SubtypeId>
         </BlockVariant>	
-		 <BlockVariant>
-          <TypeId>LargeMissileTurret</TypeId>
-          <SubtypeId>MA_Gimbal_Laser_T2</SubtypeId>
-        </BlockVariant>
-		<BlockVariant>
-          <TypeId>LargeMissileTurret</TypeId>
-          <SubtypeId>MA_Gimbal_Laser_T2_Armored</SubtypeId>
-        </BlockVariant>
-		<BlockVariant>
-          <TypeId>LargeMissileTurret</TypeId>
-          <SubtypeId>MA_Gimbal_Laser_T2_Armored_Slope</SubtypeId>
-        </BlockVariant>
-		<BlockVariant>
-          <TypeId>LargeMissileTurret</TypeId>
-          <SubtypeId>MA_Gimbal_Laser_T2_Armored_Slope2</SubtypeId>
-        </BlockVariant>
-		<BlockVariant>
-          <TypeId>LargeMissileTurret</TypeId>
-          <SubtypeId>MA_Gimbal_Laser_T2_Armored_Slope45</SubtypeId>
-        </BlockVariant>	
+
 		<BlockVariant>
           <TypeId>LargeMissileTurret</TypeId>
           <SubtypeId>MA_PDX</SubtypeId>
@@ -1028,7 +1276,55 @@ Made by Allied Astronautical.</Description>
 			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
 			<DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>100</PCU>
-        </Definition>
+ 
+ 	<BlockVariants>
+
+		 <BlockVariant>
+          <TypeId>LargeMissileTurret</TypeId>
+          <SubtypeId>MA_Gimbal_Laser_T2</SubtypeId>
+        </BlockVariant>
+		<BlockVariant>
+          <TypeId>LargeMissileTurret</TypeId>
+          <SubtypeId>MA_Gimbal_Laser_T2_Armored</SubtypeId>
+        </BlockVariant>
+		<BlockVariant>
+          <TypeId>LargeMissileTurret</TypeId>
+          <SubtypeId>MA_Gimbal_Laser_T2_Armored_Slope</SubtypeId>
+        </BlockVariant>
+		<BlockVariant>
+          <TypeId>LargeMissileTurret</TypeId>
+          <SubtypeId>MA_Gimbal_Laser_T2_Armored_Slope2</SubtypeId>
+        </BlockVariant>
+		<BlockVariant>
+          <TypeId>LargeMissileTurret</TypeId>
+          <SubtypeId>MA_Gimbal_Laser_T2_Armored_Slope45</SubtypeId>
+        </BlockVariant>	
+
+		<BlockVariant>
+          <TypeId>ConveyorSorter</TypeId>
+          <SubtypeId>MA_T2PDX</SubtypeId>
+        </BlockVariant>	
+		<BlockVariant>
+          <TypeId>ConveyorSorter</TypeId>
+          <SubtypeId>MA_T2PDX_Slope</SubtypeId>
+        </BlockVariant>	
+		<BlockVariant>
+          <TypeId>ConveyorSorter</TypeId>
+          <SubtypeId>MA_T2PDX_Slope2</SubtypeId>
+        </BlockVariant>	
+
+
+
+
+
+
+
+
+
+		
+      </BlockVariants>
+
+ </Definition>
 
 <!-- MA_Gimbal_Laser_T2_Armored -->		
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">

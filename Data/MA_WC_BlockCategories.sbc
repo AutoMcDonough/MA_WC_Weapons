@@ -16,14 +16,14 @@
 		<string>LargeMissileTurret/MA_Gimbal_Laser_Armored_Slope2</string>
 		<string>LargeMissileTurret/MA_Gimbal_Laser_Armored_Slope45</string>
 		
-        <!--string>Passage/MA_BN_Tube0_Large</string>
-		<string>Passage/MA_BN_Tube_AT</string>
-		<string>Passage/MA_BN_Tubex3_Large</string>
-		<string>Passage/MA_BN_Tube90_Large</string>
-		<string>Passage/MA_BN_Combiner_Large</string>
-		<string>Passage/MA_BN_Splitter_Large</string-->
-		<string>UpgradeModule/MA_BN_T1PSU_Large</string>
-		<string>UpgradeModule/MA_BN_T2PSU_Large</string>
+		<string>ConveyorSorter/MA_T2PDX</string>
+		<string>ConveyorSorter/MA_T2PDX_Slope</string>		
+		<string>ConveyorSorter/MA_T2PDX_Slope2</string>
+        <string>LargeMissileTurret/MA_Gimbal_Laser_T2</string>
+		<string>LargeMissileTurret/MA_Gimbal_Laser_T2_Armored</string>
+		<string>LargeMissileTurret/MA_Gimbal_Laser_T2_Armored_Slope</string>
+		<string>LargeMissileTurret/MA_Gimbal_Laser_T2_Armored_Slope2</string>
+		<string>LargeMissileTurret/MA_Gimbal_Laser_T2_Armored_Slope45</string>
 		
 		
 		<string>Passage/MA_Fixed_triangle</string>
