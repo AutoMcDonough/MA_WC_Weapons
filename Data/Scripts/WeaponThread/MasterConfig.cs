@@ -9,7 +9,10 @@
             // Enable your config files using the follow syntax, don't include the ".cs" extension:
             // ConfigFiles(Your1stConfigFile, Your2ndConfigFile, Your3rdConfigFile);
 
-            ConfigFiles(MA_PDX, MA_Gimbal_Laser, 
+            ConfigFiles(
+			MA_PDX,
+			MA_PDX_T2,
+			MA_Gimbal_Laser, 
 			MA_Gimbal_Laser_T2, 
 			MA_Gimbal_Laser_small, 
 			MA_Gladius, 

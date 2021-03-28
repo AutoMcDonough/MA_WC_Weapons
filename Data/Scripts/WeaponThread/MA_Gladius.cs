@@ -103,7 +103,7 @@ namespace WeaponThread {
                     ReloadTime = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     DelayUntilFire = 55, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     HeatPerShot = 1, //10 heat generated per shot
-                    MaxHeat = 10000, //max heat before weapon enters cooldown (70% of max heat)
+                    MaxHeat = 8000, //max heat before weapon enters cooldown (70% of max heat)
                     Cooldown = .5f, //percent of max heat to be under to start firing again after overheat accepts .2-.95
                     HeatSinkRate = 55, //amount of heat lost per second
                     DegradeRof = false, // progressively lower rate of fire after 80% heat threshold (80% of max heat)
