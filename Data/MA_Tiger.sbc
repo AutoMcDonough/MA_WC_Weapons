@@ -14,7 +14,7 @@
       <DisplayName>Tiger AC 150mm</DisplayName>
       <Icon>Textures\Icons\MA_Tiger.dds</Icon>
       <Description>Chambers 4 caseless rounds in each barrel for extreme ROF.
-Can fire a variety of 150mm ammo types.
+150mm ammo.
 Commissioned by T1g3rs65.</Description>
 	<CubeSize>Large</CubeSize>
 	<BlockTopology>TriangleMesh</BlockTopology>
@@ -207,7 +207,7 @@ Commissioned by T1g3rs65.</Description>
       <DisplayName>Tiger AC 30mm</DisplayName>
       <Icon>Textures\Icons\MA_Tiger.dds</Icon>
       <Description>Chambers 4 caseless rounds in each barrel for extreme ROF.
-Can fire a variety of 30mm ammo types.
+30mm ammo type.
 Commissioned by T1g3rs65.</Description>
 	<CubeSize>Small</CubeSize>
 	<BlockTopology>TriangleMesh</BlockTopology>

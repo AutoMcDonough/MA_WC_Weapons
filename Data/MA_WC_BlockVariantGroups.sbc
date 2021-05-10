@@ -20,6 +20,21 @@
             </Blocks>
         </BlockVariantGroup>
 
+        <BlockVariantGroup>
+            <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="MA_WC_Cannons" />
+            <Icon>Textures\GUI\Icons\Cubes\MA_AC150.png</Icon>
+            <DisplayName>MA WC Cannons</DisplayName>
+            <Description>All MA WC Cannons.</Description>
+            <Blocks>
+                <Block Type="MyObjectBuilder_ConveyorSorterDefinition" Subtype="MA_AC150" />
+                <Block Type="MyObjectBuilder_ConveyorSorterDefinition" Subtype="MA_AC150_30" />
+                <Block Type="MyObjectBuilder_ConveyorSorterDefinition" Subtype="MA_AC150_45" />
+                <Block Type="MyObjectBuilder_ConveyorSorterDefinition" Subtype="MA_AC150_Tiger" />
+
+
+
+            </Blocks>
+        </BlockVariantGroup>
 
         
     </BlockVariantGroups>

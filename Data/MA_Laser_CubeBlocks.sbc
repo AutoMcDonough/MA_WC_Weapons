@@ -304,8 +304,9 @@ Made by AutoMcD Astronautical and CriegWarfare.</Description>
 				<Model BuildPercentUpperBound="1.0" File="Models\MA_Laser2\MA_T2PDX_BS3.mwm"/>
 			</BuildProgressModels>
 			<BlockPairName>MA_T2PDX</BlockPairName>
-			<MirroringY>Z</MirroringY>
-			<MirroringZ>Y</MirroringZ>
+			<MirroringX>OffsetX</MirroringX>
+			<MirroringY>ZThenOffsetX</MirroringY>
+			<MirroringZ>YThenOffsetX</MirroringZ>
             <VoxelPlacement>
                 <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
                 <StaticMode>
@@ -359,6 +360,7 @@ Made by AutoMcD Astronautical and CriegWarfare.</Description>
             <CubeSize>Large</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
             <Size x="2" y="3" z="3" />
+			 <Center x="0" y="0" z="1" />
             <ModelOffset x="0" y="0" z="0" />
 			<ShowEdges>false</ShowEdges>
 			<GuiVisible>true</GuiVisible>
@@ -396,8 +398,9 @@ Made by AutoMcD Astronautical and CriegWarfare.</Description>
 				<Model BuildPercentUpperBound="1.0" File="Models\MA_Laser2\MA_T2PDX_Slope_BS3.mwm"/>
 			</BuildProgressModels>
 
-			<MirroringY>Z</MirroringY>
-			<MirroringZ>Y</MirroringZ>
+			<MirroringX>OffsetX</MirroringX>
+			<MirroringY>ZThenOffsetXOdd</MirroringY>
+			<MirroringZ>YThenOffsetXOdd</MirroringZ>
             <VoxelPlacement>
                 <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
                 <StaticMode>
@@ -487,8 +490,9 @@ Made by AutoMcD Astronautical and CriegWarfare.</Description>
 				<Model BuildPercentUpperBound="1.0" File="Models\MA_Laser2\MA_T2PDX_Slope2_BS3.mwm"/>
 			</BuildProgressModels>
 
-			<MirroringY>Z</MirroringY>
-			<MirroringZ>Y</MirroringZ>
+			<MirroringX>OffsetX</MirroringX>
+			<MirroringY>ZThenOffsetXOdd</MirroringY>
+			<MirroringZ>YThenOffsetXOdd</MirroringZ>
             <VoxelPlacement>
                 <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
                 <StaticMode>
@@ -1238,6 +1242,7 @@ Made by Allied Astronautical.</Description>
 			<BlockPairName>MA_Gimbal_Laser_T2</BlockPairName>
 			<MirroringY>Z</MirroringY>
 			<MirroringZ>Y</MirroringZ>
+
             <VoxelPlacement>
                 <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
                 <StaticMode>

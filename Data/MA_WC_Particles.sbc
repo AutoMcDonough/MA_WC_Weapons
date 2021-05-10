@@ -12985,7 +12985,7 @@
 			<ParticleId>76354</ParticleId>
 			<Length>1</Length>
 			<DurationMin>1</DurationMin>
-			<DurationMax>30</DurationMax>
+			<DurationMax>0</DurationMax>
 			<DistanceMax>2000</DistanceMax>
 			<Loop>true</Loop>
 			<ParticleGenerations>
