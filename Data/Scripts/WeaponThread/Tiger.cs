@@ -20,7 +20,7 @@ namespace WeaponThread {
                         MuzzlePartId = "barrel",
                         AzimuthPartId = "az",
                         ElevationPartId = "gimbal",
-						DurabilityMod = 0.75f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_MA_150mm.dds"
                     },
   
@@ -31,7 +31,7 @@ namespace WeaponThread {
                         MuzzlePartId = "barrel",
                         AzimuthPartId = "az",
                         ElevationPartId = "gimbal",
-						DurabilityMod = 0.75f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_MA_150mm.dds"
                     },
   
@@ -132,29 +132,29 @@ namespace WeaponThread {
                 Graphics = new HardPointParticleDef {
 
                     Barrel1 = new ParticleDef {
-                        Name = "", // Smoke_LargeGunShot
-                        Color = Color(red: 255, green: 0, blue: 0, alpha: 1),
-                        Offset = Vector(x: 0, y: -1, z: 0),
-
-                        Extras = new ParticleOptionDef {
-                            Loop = false,
-                            Restart = false,
-                            MaxDistance = 50,
-                            MaxDuration = 6,
-                            Scale = 1f,
-                        },
-                    },
-                    Barrel2 = new ParticleDef {
-                        Name = "MA_Gatling_Flash",//Muzzle_Flash_Large
-                        Color = Color(red: 1, green: 1, blue: 1, alpha: 0.5f),
+                        Name = "MA150MuzzlePart", // Smoke_LargeGunShot
+                        Color = Color(red: 1, green: 1, blue: 1, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
 
                         Extras = new ParticleOptionDef {
                             Loop = false,
                             Restart = false,
-                            MaxDistance = 1500,
-                            MaxDuration = 6,
-                            Scale = 7f,
+                            MaxDistance = 1000,
+                            MaxDuration = 0,
+                            Scale = 1f,
+                        },
+                    },
+                    Barrel2 = new ParticleDef {
+                        Name = "",//Muzzle_Flash_Large
+                        Color = Color(red: 1, green: 1, blue: 1, alpha: 0.5f),
+                        Offset = Vector(x: 0, y: 0, z: -1),
+
+                        Extras = new ParticleOptionDef {
+                            Loop = true,
+                            Restart = true,
+                            MaxDistance = 500,
+                            MaxDuration = 0,
+                            Scale = 2f,
                         },
                     },
                 },
@@ -178,7 +178,7 @@ namespace WeaponThread {
                         MuzzlePartId = "barrel_30",
                         AzimuthPartId = "az_30",
                         ElevationPartId = "gimbal_30",
-						DurabilityMod = 0.75f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_MA_30mm.dds"
                     },
   
@@ -286,30 +286,31 @@ namespace WeaponThread {
                 },
                 Graphics = new HardPointParticleDef {
 
-                    Barrel1 = new ParticleDef {
-                        Name = "", // Smoke_LargeGunShot
-                        Color = Color(red: 255, green: 0, blue: 0, alpha: 1),
-                        Offset = Vector(x: 0, y: -1, z: 0),
-
-                        Extras = new ParticleOptionDef {
-                            Loop = false,
-                            Restart = false,
-                            MaxDistance = 50,
-                            MaxDuration = 6,
+                    Barrel1 = new ParticleDef
+                    {
+                        Name = "MA_Gatling_Flash",//Muzzle_Flash_Large
+                        Color = Color(red: 1, green: 1, blue: 1, alpha: 1),
+                        Offset = Vector(x: 0, y: 0, z: 0),//offset is bugged right now
+                        Extras = new ParticleOptionDef
+                        {
+                            Loop = true,
+                            Restart = true,
+                            MaxDistance = 600,
+                            MaxDuration = 0,
                             Scale = 1f,
                         },
-                    },
+					},
                     Barrel2 = new ParticleDef {
-                        Name = "MA_Gatling_Flash",//Muzzle_Flash_Large
+                        Name = "",//Muzzle_Flash_Large
                         Color = Color(red: 1, green: 1, blue: 1, alpha: 0.5f),
-                        Offset = Vector(x: 0, y: 0, z: 0),
+                        Offset = Vector(x: 0, y: 0, z: -1),
 
                         Extras = new ParticleOptionDef {
-                            Loop = false,
-                            Restart = false,
-                            MaxDistance = 1500,
-                            MaxDuration = 5,
-                            Scale = 1.5f,
+                            Loop = true,
+                            Restart = true,
+                            MaxDistance = 500,
+                            MaxDuration = 0,
+                            Scale = 2f,
                         },
                     },
                 },

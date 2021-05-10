@@ -21,7 +21,7 @@ namespace WeaponThread {
                         MuzzlePartId = "MissileTurretBarrels",
                         AzimuthPartId = "MissileTurretBase1",
                         ElevationPartId = "MissileTurretBarrels",
-						DurabilityMod = .9f,
+						DurabilityMod = .25f,
                         IconName = "filter_energy.dds"
                     },
  
@@ -32,7 +32,7 @@ namespace WeaponThread {
                         MuzzlePartId = "MissileTurretBarrels",
                         AzimuthPartId = "MissileTurretBase1",
                         ElevationPartId = "MissileTurretBarrels",
-						DurabilityMod = 0.9f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_energy.dds"
                     },				
 				
@@ -186,7 +186,7 @@ namespace WeaponThread {
                         MuzzlePartId = "MissileTurretBarrels",
                         AzimuthPartId = "MissileTurretBase1",
                         ElevationPartId = "MissileTurretBarrels",
-						DurabilityMod = .9f,
+						DurabilityMod = .25f,
                         IconName = "filter_energy.dds"
                     },
  
@@ -196,7 +196,7 @@ namespace WeaponThread {
                         MuzzlePartId = "MissileTurretBarrels",
                         AzimuthPartId = "MissileTurretBase1",
                         ElevationPartId = "MissileTurretBarrels",
-						DurabilityMod = .9f,
+						DurabilityMod = .25f,
                         IconName = "filter_energy.dds"
                     },
 
@@ -206,7 +206,7 @@ namespace WeaponThread {
                         MuzzlePartId = "MissileTurretBarrels",
                         AzimuthPartId = "MissileTurretBase1",
                         ElevationPartId = "MissileTurretBarrels",
-						DurabilityMod = .9f,
+						DurabilityMod = .25f,
                         IconName = "filter_energy.dds"
                     },				
 					
@@ -221,7 +221,7 @@ namespace WeaponThread {
             {
                 Threats = new[]
                 {
-                    Projectiles, Meteors, Grids, Characters,  // threats percieved automatically without changing menu settings  Grids, Characters, Projectiles, Meteors,
+                    Meteors, Grids, Characters,  // threats percieved automatically without changing menu settings  Grids, Characters, Projectiles, Meteors,
                 },
                 SubSystems = new[]
                 {
@@ -259,8 +259,8 @@ namespace WeaponThread {
                 },
                 HardWare = new HardwareDef
                 {
-                    RotateRate = 0.014f,
-                    ElevateRate = 0.014f,
+                    RotateRate = 0.015f,
+                    ElevateRate = 0.015f,
                     MinAzimuth = -180,
                     MaxAzimuth = 180,
                     MinElevation = -20,
@@ -358,7 +358,7 @@ namespace WeaponThread {
                         MuzzlePartId = "MissileTurretBarrels",
                         AzimuthPartId = "MissileTurretBase1",
                         ElevationPartId = "MissileTurretBarrels",
-						DurabilityMod = 0.5f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_energy.dds"
                     },
 
@@ -369,7 +369,7 @@ namespace WeaponThread {
                         MuzzlePartId = "MissileTurretBarrels",
                         AzimuthPartId = "MissileTurretBase1",
                         ElevationPartId = "MissileTurretBarrels",
-						DurabilityMod = 0.5f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_energy.dds" 
  },
 
@@ -380,7 +380,7 @@ namespace WeaponThread {
                         MuzzlePartId = "MissileTurretBarrels",
                         AzimuthPartId = "MissileTurretBase1",
                         ElevationPartId = "MissileTurretBarrels",
-						DurabilityMod = 0.5f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_energy.dds"
                     },
 
@@ -391,7 +391,7 @@ namespace WeaponThread {
                         MuzzlePartId = "MissileTurretBarrels",
                         AzimuthPartId = "MissileTurretBase1",
                         ElevationPartId = "MissileTurretBarrels",
-						DurabilityMod = 0.5f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_energy.dds"
                     },
 
@@ -402,7 +402,7 @@ namespace WeaponThread {
                         MuzzlePartId = "MissileTurretBarrels",
                         AzimuthPartId = "MissileTurretBase1",
                         ElevationPartId = "MissileTurretBarrels",
-						DurabilityMod = 0.75f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_energy.dds"
                     },
 
@@ -559,7 +559,7 @@ namespace WeaponThread {
                         MuzzlePartId = "MissileTurretBarrels",
                         AzimuthPartId = "MissileTurretBase1",
                         ElevationPartId = "MissileTurretBarrels",
-						DurabilityMod = 0.5f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_energy.dds"
                     },
 
@@ -570,7 +570,7 @@ namespace WeaponThread {
                         MuzzlePartId = "MissileTurretBarrels",
                         AzimuthPartId = "MissileTurretBase1",
                         ElevationPartId = "MissileTurretBarrels",
-						DurabilityMod = 0.5f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_energy.dds" 
  },
 
@@ -581,7 +581,7 @@ namespace WeaponThread {
                         MuzzlePartId = "MissileTurretBarrels",
                         AzimuthPartId = "MissileTurretBase1",
                         ElevationPartId = "MissileTurretBarrels",
-						DurabilityMod = 0.5f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_energy.dds"
                     },
 
@@ -592,7 +592,7 @@ namespace WeaponThread {
                         MuzzlePartId = "MissileTurretBarrels",
                         AzimuthPartId = "MissileTurretBase1",
                         ElevationPartId = "MissileTurretBarrels",
-						DurabilityMod = 0.5f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_energy.dds"
                     },
 
@@ -603,7 +603,7 @@ namespace WeaponThread {
                         MuzzlePartId = "MissileTurretBarrels",
                         AzimuthPartId = "MissileTurretBase1",
                         ElevationPartId = "MissileTurretBarrels",
-						DurabilityMod = 0.75f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_energy.dds"
                     },
 
@@ -620,7 +620,7 @@ namespace WeaponThread {
             {
                 Threats = new[]
                 {
-                    Projectiles, Meteors, Grids, Characters,  // threats percieved automatically without changing menu settings  Grids, Characters, Projectiles, Meteors,
+                    Meteors, Grids, Characters,  // threats percieved automatically without changing menu settings  Grids, Characters, Projectiles, Meteors,
                 },
                 SubSystems = new[]
                 {
@@ -759,7 +759,7 @@ namespace WeaponThread {
                         MuzzlePartId = "MissileTurretBarrels",
                         AzimuthPartId = "MissileTurretBase1",
                         ElevationPartId = "MissileTurretBarrels",
-						DurabilityMod = 0.5f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_energy.dds"
                     },				
 
@@ -770,7 +770,7 @@ namespace WeaponThread {
                         MuzzlePartId = "MissileTurretBarrels",
                         AzimuthPartId = "MissileTurretBase1",
                         ElevationPartId = "MissileTurretBarrels",
-						DurabilityMod = 0.5f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_energy.dds"
                     },				
 
@@ -781,7 +781,7 @@ namespace WeaponThread {
                         MuzzlePartId = "MissileTurretBarrels",
                         AzimuthPartId = "MissileTurretBase1",
                         ElevationPartId = "MissileTurretBarrels",
-						DurabilityMod = 0.5f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_energy.dds"
                     },				
 
@@ -792,7 +792,7 @@ namespace WeaponThread {
                         MuzzlePartId = "MissileTurretBarrels",
                         AzimuthPartId = "MissileTurretBase1",
                         ElevationPartId = "MissileTurretBarrels",
-						DurabilityMod = 0.5f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_energy.dds"
                     },				
 
@@ -803,7 +803,7 @@ namespace WeaponThread {
                         MuzzlePartId = "MissileTurretBarrels",
                         AzimuthPartId = "MissileTurretBase1",
                         ElevationPartId = "MissileTurretBarrels",
-						DurabilityMod = 0.75f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_energy.dds"
                     },				
 
@@ -956,7 +956,7 @@ namespace WeaponThread {
                         MuzzlePartId = "MissileTurretBarrels",
                         AzimuthPartId = "MissileTurretBase1",
                         ElevationPartId = "MissileTurretBarrels",
-						DurabilityMod = 0.85f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_energy.dds" 
 					},
 				    new MountPointDef {
@@ -965,7 +965,7 @@ namespace WeaponThread {
                         MuzzlePartId = "MissileTurretBarrels",
                         AzimuthPartId = "MissileTurretBase1",
                         ElevationPartId = "MissileTurretBarrels",
-						DurabilityMod = 0.85f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_energy.dds"
                     },
 
@@ -1115,7 +1115,7 @@ namespace WeaponThread {
                         MuzzlePartId = "None",
                         AzimuthPartId = "None",
                         ElevationPartId = "None",
-						DurabilityMod = 0.5f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_energy.dds"
                     },
 
@@ -1126,7 +1126,7 @@ namespace WeaponThread {
                         MuzzlePartId = "None",
                         AzimuthPartId = "None",
                         ElevationPartId = "None",
-						DurabilityMod = 0.5f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_energy.dds"
                     },
 
@@ -1137,7 +1137,7 @@ namespace WeaponThread {
                         MuzzlePartId = "None",
                         AzimuthPartId = "None",
                         ElevationPartId = "None",
-						DurabilityMod = 0.5f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_energy.dds"
                     },
 
@@ -1148,7 +1148,7 @@ namespace WeaponThread {
                         MuzzlePartId = "None",
                         AzimuthPartId = "None",
                         ElevationPartId = "None",
-						DurabilityMod = 0.5f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_energy.dds"
                     },
 
@@ -1159,7 +1159,7 @@ namespace WeaponThread {
                         MuzzlePartId = "None",
                         AzimuthPartId = "None",
                         ElevationPartId = "None",
-						DurabilityMod = 0.5f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_energy.dds"
                     },
                   new MountPointDef {
@@ -1168,7 +1168,7 @@ namespace WeaponThread {
                         MuzzlePartId = "None",
                         AzimuthPartId = "None",
                         ElevationPartId = "None",
-						DurabilityMod = 0.5f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_energy.dds"
                     },
                   new MountPointDef {
@@ -1177,7 +1177,7 @@ namespace WeaponThread {
                         MuzzlePartId = "None",
                         AzimuthPartId = "None",
                         ElevationPartId = "None",
-						DurabilityMod = 0.5f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_energy.dds"
                     },
                   new MountPointDef {
@@ -1186,7 +1186,7 @@ namespace WeaponThread {
                         MuzzlePartId = "None",
                         AzimuthPartId = "None",
                         ElevationPartId = "None",
-						DurabilityMod = 0.5f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_energy.dds"
                     },
 
@@ -1345,7 +1345,7 @@ namespace WeaponThread {
                         MuzzlePartId = "None",
                         AzimuthPartId = "None",
                         ElevationPartId = "None",
-						DurabilityMod = 0.5f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_energy.dds"
                     },				
 
@@ -1356,7 +1356,7 @@ namespace WeaponThread {
                         MuzzlePartId = "None",
                         AzimuthPartId = "None",
                         ElevationPartId = "None",
-						DurabilityMod = 0.5f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_energy.dds"
                     },				
 
@@ -1367,7 +1367,7 @@ namespace WeaponThread {
                         MuzzlePartId = "None",
                         AzimuthPartId = "None",
                         ElevationPartId = "None",
-						DurabilityMod = 0.5f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_energy.dds"
                     },				
 
@@ -1378,7 +1378,7 @@ namespace WeaponThread {
                         MuzzlePartId = "None",
                         AzimuthPartId = "None",
                         ElevationPartId = "None",
-						DurabilityMod = 0.5f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_energy.dds"
                     },				
 
@@ -1389,7 +1389,7 @@ namespace WeaponThread {
                         MuzzlePartId = "None",
                         AzimuthPartId = "None",
                         ElevationPartId = "None",
-						DurabilityMod = 0.5f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_energy.dds"
                     },				
 
@@ -1399,7 +1399,7 @@ namespace WeaponThread {
                         MuzzlePartId = "None",
                         AzimuthPartId = "None",
                         ElevationPartId = "None",
-						DurabilityMod = 0.5f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_energy.dds"
                     },				
                     new MountPointDef {
@@ -1408,7 +1408,7 @@ namespace WeaponThread {
                         MuzzlePartId = "None",
                         AzimuthPartId = "None",
                         ElevationPartId = "None",
-						DurabilityMod = 0.5f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_energy.dds"
                     },				
                     new MountPointDef {
@@ -1417,7 +1417,7 @@ namespace WeaponThread {
                         MuzzlePartId = "None",
                         AzimuthPartId = "None",
                         ElevationPartId = "None",
-						DurabilityMod = 0.5f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_energy.dds"
                     },				
 

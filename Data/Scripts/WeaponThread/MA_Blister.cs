@@ -23,7 +23,7 @@ namespace WeaponThread {
                         MuzzlePartId = "Part2",
                         AzimuthPartId = "Base3b",
                         ElevationPartId = "Part2",
-						DurabilityMod = 0.85f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_nato.dds"
                     },
                   new MountPointDef {
@@ -32,7 +32,7 @@ namespace WeaponThread {
                         MuzzlePartId = "Part2",
                         AzimuthPartId = "Base3b",
                         ElevationPartId = "Part2",
-						DurabilityMod = 0.85f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_nato.dds"						
                     },
 					new MountPointDef {
@@ -41,7 +41,7 @@ namespace WeaponThread {
                         MuzzlePartId = "Part2",
                         AzimuthPartId = "Base3b",
                         ElevationPartId = "Part2",
-						DurabilityMod = 0.85f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_nato.dds"						
                     },
 					new MountPointDef {
@@ -50,7 +50,7 @@ namespace WeaponThread {
                         MuzzlePartId = "Part2",
                         AzimuthPartId = "Base3b",
                         ElevationPartId = "Part2",
-						DurabilityMod = 0.85f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_nato.dds"						
                     },					
 					new MountPointDef {
@@ -59,7 +59,7 @@ namespace WeaponThread {
                         MuzzlePartId = "Part2",
                         AzimuthPartId = "Base3c",
                         ElevationPartId = "Part2",
-						DurabilityMod = 0.85f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_nato.dds"						
                     },
 					new MountPointDef {
@@ -68,7 +68,7 @@ namespace WeaponThread {
                         MuzzlePartId = "Part2",
                         AzimuthPartId = "Base3d",
                         ElevationPartId = "Part2",
-						DurabilityMod = 0.85f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_nato.dds"						
                     },
 					new MountPointDef {
@@ -77,7 +77,7 @@ namespace WeaponThread {
                         MuzzlePartId = "Part2",
                         AzimuthPartId = "Base3d",
                         ElevationPartId = "Part2",
-						DurabilityMod = 0.85f,
+						DurabilityMod = 0.25f,
                         IconName = "filter_nato.dds"						
                     },					
                 },
@@ -103,6 +103,7 @@ namespace WeaponThread {
                 TopTargets = 0, // 0 = unlimited, max number of top targets to randomize between.
                 TopBlocks = 4, // 0 = unlimited, max number of blocks to randomize between
                 StopTrackingSpeed = 1000, // do not track target threats traveling faster than this speed
+				MaxTargetDistance = 1000,
             },
             HardPoint = new HardPointDef
             {
@@ -184,11 +185,24 @@ namespace WeaponThread {
                         Offset = Vector(x: 0, y: 0, z: 0),//offset is bugged right now
                         Extras = new ParticleOptionDef
                         {
-                            Loop = false,
-                            Restart = false,
+                            Loop = true,
+                            Restart = true,
                             MaxDistance = 600,
-                            MaxDuration = 15,
-                            Scale = 100f,
+                            MaxDuration = 0,
+                            Scale = 1f,
+                        },
+					},
+                    Barrel2 = new ParticleDef {
+                        Name = "",//Muzzle_Flash_Large
+                        Color = Color(red: 1, green: 1, blue: 1, alpha: 0.5f),
+                        Offset = Vector(x: 0, y: 0, z: -1),
+
+                        Extras = new ParticleOptionDef {
+                            Loop = true,
+                            Restart = true,
+                            MaxDistance = 500,
+                            MaxDuration = 0,
+                            Scale = 2f,
                         },
                     },
                 },

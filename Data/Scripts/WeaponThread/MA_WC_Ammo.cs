@@ -105,7 +105,7 @@ namespace WeaponThread
                     {
                         new CustomBlocksDef
                         {
-                            SubTypeId = "LargeHeavyBlockArmorBlock",
+                            SubTypeId = "",
                             Modifier = 2f,
                         },
                     },
@@ -192,7 +192,7 @@ namespace WeaponThread
                 MaxLifeTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
                 DesiredSpeed = 700,
-                MaxTrajectory = 1000f,
+                MaxTrajectory = 1500f,
                 FieldTime = 0, // 0 is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
@@ -254,7 +254,7 @@ namespace WeaponThread
                             Restart = false,
                             MaxDistance = 2500,
                             MaxDuration = 5,
-                            Scale = 100,
+                            Scale = 1,
                             HitPlayChance = 1f,
                         },
                     },
@@ -271,7 +271,7 @@ namespace WeaponThread
                             Restart = false,
                             MaxDistance = 500,
                             MaxDuration = 60,
-                            Scale = 2,
+                            Scale = 1,
                             HitPlayChance = 1f,
                         },
                     },
@@ -431,7 +431,7 @@ namespace WeaponThread
                     {
                         new CustomBlocksDef
                         {
-                            SubTypeId = "LargeHeavyBlockArmorBlock",
+                            SubTypeId = "",
                             Modifier = 2f,
                         },
                         new CustomBlocksDef
@@ -551,7 +551,7 @@ namespace WeaponThread
                             Restart = false,
                             MaxDistance = 500,
                             MaxDuration = 0,
-                            Scale = 20,
+                            Scale = 1,
                             HitPlayChance = 1,
                         },
                     },
@@ -686,7 +686,7 @@ namespace WeaponThread
             DamageScales = new DamageScaleDef
             {
                 MaxIntegrity = 0f, // 0 = disabled, 1000 = any blocks with currently integrity above 1000 will be immune to damage.
-                DamageVoxels = true, // true = voxels are vulnerable to this weapon
+                DamageVoxels = false, // true = voxels are vulnerable to this weapon
                 SelfDamage = false, // true = allow self damage.
 
                 // modifier values: -1 = disabled (higher performance), 0 = no damage, 0.01 = 1% damage, 2 = 200% damage.
@@ -722,7 +722,7 @@ namespace WeaponThread
                     {
                         new CustomBlocksDef
                         {
-                            SubTypeId = "LargeHeavyBlockArmorBlock",
+                            SubTypeId = "",
                             Modifier = 2f,
                         },
                         new CustomBlocksDef
@@ -1156,7 +1156,7 @@ namespace WeaponThread
                             Restart = true,
                             MaxDistance = 1000,
                             MaxDuration = 10,
-                            Scale = 100,
+                            Scale = 1,
                             HitPlayChance = 1f,
                         },
                     },
@@ -1339,7 +1339,7 @@ namespace WeaponThread
                     {
                         new CustomBlocksDef
                         {
-                            SubTypeId = "LargeHeavyBlockArmorBlock",
+                            SubTypeId = "",
                             Modifier = 2f,
                         },
                         new CustomBlocksDef
@@ -1459,7 +1459,7 @@ namespace WeaponThread
                             Restart = false,
                             MaxDistance = 500,
                             MaxDuration = 0,
-                            Scale = 15,
+                            Scale = 1,
                             HitPlayChance = 1,
                         },
                     },
@@ -1598,7 +1598,7 @@ namespace WeaponThread
                     {
                         new CustomBlocksDef
                         {
-                            SubTypeId = "LargeHeavyBlockArmorBlock",
+                            SubTypeId = "",
                             Modifier = 2f,
                         },
                         new CustomBlocksDef
@@ -1718,7 +1718,7 @@ namespace WeaponThread
                             Restart = false,
                             MaxDistance = 500,
                             MaxDuration = 0,
-                            Scale = 30,
+                            Scale = 1,
                             HitPlayChance = 1,
                         },
                     },
@@ -1867,7 +1867,7 @@ namespace WeaponThread
                     {
                         new CustomBlocksDef
                         {
-                            SubTypeId = "LargeHeavyBlockArmorBlock",
+                            SubTypeId = "",
                             Modifier = 2f,
                         },
                         new CustomBlocksDef
@@ -1987,7 +1987,7 @@ namespace WeaponThread
                             Restart = false,
                             MaxDistance = 500,
                             MaxDuration = 0,
-                            Scale = 30,
+                            Scale = 1,
                             HitPlayChance = 1,
                         },
                     },

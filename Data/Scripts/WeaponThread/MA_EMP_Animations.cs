@@ -78,7 +78,7 @@ namespace WeaponThread
 
 			
             
-            EventParticles = new Dictionary<PartAnimationSetDef.EventTriggers, EventParticle[]>
+  /*          EventParticles = new Dictionary<PartAnimationSetDef.EventTriggers, EventParticle[]>
             {
                 [Firing] = new[]{
                     new EventParticle
@@ -104,7 +104,7 @@ namespace WeaponThread
                     },
                 },
             },
-			
+	*/		
 			WeaponAnimationSets = new[]
             {
 			new PartAnimationSetDef()

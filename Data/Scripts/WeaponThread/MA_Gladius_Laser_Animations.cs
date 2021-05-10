@@ -213,7 +213,8 @@ namespace WeaponThread
 			
         };
 		
-        private AnimationDef MA_Gladius_EMP_Animations => new AnimationDef
+     /*   disabled this particle for now, it is causing issue
+	 private AnimationDef MA_Gladius_EMP_Animations => new AnimationDef
         {
 			EventParticles = new Dictionary<PartAnimationSetDef.EventTriggers, EventParticle[]>
             {
@@ -241,7 +242,8 @@ namespace WeaponThread
                     },
                 },
             },
-        };
+        };*/
+		
 
     }
 }

@@ -23,7 +23,7 @@ namespace WeaponThread {
                         MuzzlePartId = "GatlingBarrel",
                         AzimuthPartId = "GatlingTurretBase1",
                         ElevationPartId = "GatlingTurretBase2",
-						DurabilityMod = 1f,
+						DurabilityMod = .25f,
                         IconName = "filter_energy.dds"
                     },
  					
@@ -136,7 +136,7 @@ namespace WeaponThread {
 							Restart = true,
 							MaxDistance = 400, //meters
 							MaxDuration = 30, //ticks 60 = 1 second
-							Scale = 3,
+							Scale = 1,
 						}
                     },
                 },

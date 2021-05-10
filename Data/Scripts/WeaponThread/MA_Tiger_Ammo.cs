@@ -20,10 +20,10 @@ namespace WeaponThread
                 AmmoRound = "MA_150mm",
                 HybridRound = false, //AmmoMagazine based weapon with energy cost
                 EnergyCost = 0.00000000001f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-                BaseDamage = 6000f,
+                BaseDamage = 2000f,
                 Mass = 100f, // in kilograms
                 Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
-                BackKickForce = 6000f,
+                BackKickForce = 8000f,
 
                 Shape = new ShapeDef //defines the collision shape of projectile, defaults line and visual Line Length if set to 0
                 {
@@ -75,14 +75,14 @@ namespace WeaponThread
                     },
                     Armor = new ArmorDef
                     {
-                        Armor = 0.8f,
-                        Light = 0.8f,
-                        Heavy = 0.9f,
-                        NonArmor = 1f,
+                        Armor = -1f,
+                        Light = -1f,
+                        Heavy = -1f,
+                        NonArmor = -1f,
                     },
                     Shields = new ShieldDef
                     {
-                        Modifier = -1f,
+                        Modifier = 2.5f,
                         Type = Kinetic,
                         BypassModifier = -1f,
                     },
@@ -107,32 +107,34 @@ namespace WeaponThread
                 },
                 AreaEffect = new AreaDamageDef
                 {
-                    AreaEffect = Disabled, // Disabled = do not use area effect at all, Explosive, Radiant, AntiSmart, JumpNullField, JumpNullField, EnergySinkField, AnchorField, EmpField, OffenseField, NavField, DotField.
+                    AreaEffect = Explosive, // Disabled = do not use area effect at all, Explosive, Radiant, AntiSmart, JumpNullField, JumpNullField, EnergySinkField, AnchorField, EmpField, OffenseField, NavField, DotField.
                     AreaEffectDamage = 0f, // 0 = use spillover from BaseDamage, otherwise use this value.
-                    AreaEffectRadius = 70f,
+                    AreaEffectRadius = 0f,
                     Pulse = new PulseDef // interval measured in game ticks (60 == 1 second), pulseChance chance (0 - 100) that an entity in field will be hit
                     {
-                        Interval = 30,
-                        PulseChance = 100,
+                        Interval = 0,
+                        PulseChance = 0,
                     },
                     Explosions = new ExplosionDef
                     {
                         NoVisuals = false,
-                        NoSound = false,
-                        Scale = 1,
-                        CustomParticle = "",
-                        CustomSound = "",
+                    NoSound = false,
+                    NoShrapnel = false,
+                    NoDeformation = false,
+                    Scale = 0.8f,
+                        CustomParticle = "MAsmallFlashExplosion",
+                        CustomSound = "ArcWepSmallMissileExplShip",
                     },
                     Detonation = new DetonateDef
                     {
-                        DetonateOnEnd = false,
+                        DetonateOnEnd = true,
                         ArmOnlyOnHit = false,
-                        DetonationDamage = 0,
-                        DetonationRadius = 2,
+                        DetonationDamage = 2000,
+                        DetonationRadius = 1.5f,
                     },
                     EwarFields = new EwarFieldsDef
                     {
-                        Duration = 60,
+                        Duration = 0,
                         StackDuration = true,
                         Depletable = false,
                         MaxStacks = 10,
@@ -154,8 +156,8 @@ namespace WeaponThread
                     TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     MaxLifeTime = 240, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     AccelPerSec = 0f,
-                    DesiredSpeed = 650,
-                    MaxTrajectory = 2800f,
+                    DesiredSpeed = 750,
+                    MaxTrajectory = 3500f,
                     FieldTime = 0, // 0 is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
 					GravityMultiplier = .7f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                     SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
@@ -201,10 +203,10 @@ namespace WeaponThread
                         },
                         Hit = new ParticleDef
                         {
-                            Name = "MA_Bullet_hit",
+                            Name = "",
                             ApplyToShield = true,
                             ShrinkByDistance = true,
-                            Color = Color(red: 3, green: 2, blue: 1, alpha: 1),
+                            Color = Color(red: 24, green: 16, blue: 8, alpha: 1),
                             Offset = Vector(x: 0, y: 0, z: 0),
                             Extras = new ParticleOptionDef
                             {
@@ -212,7 +214,7 @@ namespace WeaponThread
                                 Restart = false,
                                 MaxDistance = 3500,
                                 MaxDuration = 1,
-                                Scale = 10f,
+                                Scale = .8f,
                                 HitPlayChance = 1f,
                             },
                         },
@@ -220,24 +222,24 @@ namespace WeaponThread
                     Lines = new LineDef
                     {
                         TracerMaterial = "ProjectileTrailLine", // WeaponLaser, ProjectileTrailLine, WarpBubble, etc..
-                        ColorVariance = Random(start: 1f, end: 3f), // multiply the color by random values within range.
-                        WidthVariance = Random(start: -0.05f, end: 0.05f), // adds random value to default width (negatives shrinks width)
+                        ColorVariance = Random(start: 0.8f, end: 1f), // multiply the color by random values within range.
+                        WidthVariance = Random(start: 0f, end: 0.1f), // adds random value to default width (negatives shrinks width)
                         Tracer = new TracerBaseDef
                         {
                             Enable = true,
-                            Length = 1.5f,
-                            Width = 0.15f,
-                            Color = Color(red: 4f, green: 4f, blue: 3f, alpha: 1),
+                            Length = 6f,
+                            Width = 0.1f,
+                            Color = Color(red: 40, green: 20, blue: 3f, alpha: 1),
                         },
                         Trail = new TrailDef
                         {
                             Enable = true,
                             Material = "WeaponLaser",
                             DecayTime = 10,
-                            Color = Color(red: 3, green: 2, blue: 1, alpha: .5f),
+                            Color = Color(red: 3.1f, green: 1.2f, blue: 0.1f, alpha: .4f),
                             Back = false,
-                            CustomWidth = 0,
-                            UseWidthVariance = true,
+                            CustomWidth = 0.1f,
+                            UseWidthVariance = false,
                             UseColorFade = true,
                         },
                         OffsetEffect = new OffsetEffectDef
@@ -251,7 +253,7 @@ namespace WeaponThread
                 AmmoAudio = new AmmoAudioDef
                 {
                     TravelSound = "",
-                    HitSound = "ArcImpMetalMetalCat0",
+                    HitSound = "",
                     HitPlayChance = 1f,
                     HitPlayShield = true,
                 }, // Don't edit below this line

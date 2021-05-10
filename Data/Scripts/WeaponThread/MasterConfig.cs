@@ -25,7 +25,9 @@
 			MA_Fixed_Laser, 
 			MA_Fixed_Laser_small, 
 			MA_Tiger, 
-			MA_Tiger_30_sm, MA_EMP);
+			MA_Tiger_30_sm,
+			MA_EMP,
+			MA_AC150);
         }
     }
 }

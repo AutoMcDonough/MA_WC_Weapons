@@ -32,6 +32,7 @@ namespace WeaponThread {
                 {
                     "muzzle_missile_001", "muzzle_missile_002"
                 },
+				Scope = "Scope", //Where line of sight checks are performed from must be clear of block collision
             },
             Targeting = new TargetingDef
             {
@@ -44,7 +45,7 @@ namespace WeaponThread {
                     Offense, Thrust, Utility, Power, Production, Any, // subsystems the gun targets
                 },
                 ClosestFirst = false, // tries to pick closest targets first (blocks on grids, projectiles, etc...).
-                MinimumDiameter = 3, // 0 = unlimited, Minimum radius of threat to engage.
+                MinimumDiameter = 1, // 0 = unlimited, Minimum radius of threat to engage.
                 MaximumDiameter = 0, // 0 = unlimited, Maximum radius of threat to engage.
                 TopTargets = 4, // 0 = unlimited, max number of top targets to randomize between.
                 TopBlocks = 10, // 0 = unlimited, max number of blocks to randomize between
@@ -90,7 +91,7 @@ namespace WeaponThread {
                     GridWeaponCap = 0,
                     RotateBarrelAxis = 0,
                     EnergyPriority = 0,
-                    MuzzleCheck = false,
+                    MuzzleCheck = true,
                     Debug = false,
                 },
                 Loading = new LoadingDef
@@ -171,11 +172,11 @@ namespace WeaponThread {
                 {
                     new MountPointDef {
                         SubtypeId = "MA_Gladius",
-                        AimPartId = "blankmuzzle",
+                        AimPartId = "None",
                         MuzzlePartId = "blankmuzzle",
-                        AzimuthPartId = "blankmuzzle",
-                        ElevationPartId = "blankmuzzle",
-						DurabilityMod = 0.5f,
+                        AzimuthPartId = "MA_Gladius_Base",
+                        ElevationPartId = "MA_Gladius_Barrel",
+						DurabilityMod = 0.25f,
                         IconName = "filter_energy.dds"
                     },
 
@@ -184,6 +185,7 @@ namespace WeaponThread {
                 {
                     "muzzle_missile_003"
                 },
+				Scope = "Scope", //Where line of sight checks are performed from must be clear of block collision
             },
             Targeting = new TargetingDef
             {
@@ -242,7 +244,7 @@ namespace WeaponThread {
                     GridWeaponCap = 0,
                     RotateBarrelAxis = 0,
                     EnergyPriority = 0,
-                    MuzzleCheck = false,
+                    MuzzleCheck = true,
                     Debug = false,
                 },
                 Loading = new LoadingDef
@@ -286,7 +288,7 @@ namespace WeaponThread {
 							Restart = true,
 							MaxDistance = 400, //meters
 							MaxDuration = 30, //ticks 60 = 1 second
-							Scale = 3,
+							Scale = 1,
                         },
                     },
                 },
@@ -295,7 +297,7 @@ namespace WeaponThread {
 			Ammos = new [] {
                 MA_Ion_1
             },
-            Animations = MA_Gladius_EMP_Animations,
+            //Animations = MA_Gladius_EMP_Animations,
             // Don't edit below this line
         };				
 		
