@@ -33,6 +33,7 @@ namespace WeaponThread {
                 {
                     "muzzle_01", "muzzle_02",
                 },
+				Scope = "scope_01", //Where line of sight checks are performed from must be clear of block collision
             },
             Targeting = new TargetingDef
             {
@@ -50,12 +51,12 @@ namespace WeaponThread {
                 TopTargets = 0, // 0 = unlimited, max number of top targets to randomize between.
                 TopBlocks = 4, // 0 = unlimited, max number of blocks to randomize between
                 StopTrackingSpeed = 1000, // do not track target threats traveling faster than this speed
-				MaxTargetDistance = 1000,
+				MaxTargetDistance = 1250,
             },
             HardPoint = new HardPointDef
             {
                 WeaponName = "Meatball", // name of weapon in terminal
-                DeviateShotAngle = 2f,
+                DeviateShotAngle = 1.8f,
                 AimingTolerance = .3f, // 0 - 180 firing angle
                 AimLeadingPrediction = Accurate, // Off, Basic, Accurate, Advanced
                 DelayCeaseFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
@@ -97,17 +98,17 @@ namespace WeaponThread {
                 },
                 Loading = new LoadingDef
                 {
-                    RateOfFire = 800,
+                    RateOfFire = 720,
                     BarrelSpinRate = 0, // visual only, 0 disables and uses RateOfFire
-                    BarrelsPerShot = 2,
+                    BarrelsPerShot = 1,
                     TrajectilesPerBarrel = 1, // Number of Trajectiles per barrel per fire event.
                     SkipBarrels = 0,
-                    ReloadTime = 300, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                    ReloadTime = 120, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     DelayUntilFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                    HeatPerShot = 3, //heat generated per shot
-                    MaxHeat = 2000, //max heat before weapon enters cooldown (70% of max heat)
-                    Cooldown = .2f, //percent of max heat to be under to start firing again after overheat accepts .2-.95
-                    HeatSinkRate = 13, //amount of heat lost per second
+                    HeatPerShot = 10, //heat generated per shot
+                    MaxHeat = 1000, //max heat before weapon enters cooldown (70% of max heat)
+                    Cooldown = .8f, //percent of max heat to be under to start firing again after overheat accepts .2-.95
+                    HeatSinkRate = 20, //amount of heat lost per second
                     DegradeRof = true, // progressively lower rate of fire after 80% heat threshold (80% of max heat)
                     ShotsInBurst = 0,
                     DelayAfterBurst = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
@@ -115,11 +116,11 @@ namespace WeaponThread {
                 },
                 Audio = new HardPointAudioDef
                 {
-                    PreFiringSound = "",
-                    FiringSound = "WepShipGatlingShot", // subtype name from sbc
+                    PreFiringSound = "ArcWepShipGatlingRotation",
+                    FiringSound = "ArcWepShipGatlingShot", // subtype name from sbc
                     FiringSoundPerShot = true,
                     ReloadSound = "",
-                    NoAmmoSound = "",
+                    NoAmmoSound = "ArcWepShipGatlingNoAmmo",
                     HardPointRotationSound = "WepTurretGatlingRotate",
                     BarrelRotationSound = "WepShipGatlingRotation",
                 },
@@ -156,7 +157,7 @@ namespace WeaponThread {
             },
        
 			Ammos = new [] {
-                MA_Gatling
+                MA_30mm
             },
             Animations = MeatBallCenterAnimations,
             // Don't edit below this line
@@ -181,6 +182,7 @@ namespace WeaponThread {
                 {
                     "muzzle_05", "muzzle_06",
                 },
+				Scope = "scope_03", //Where line of sight checks are performed from must be clear of block collision
             },
             Targeting = new TargetingDef
             {
@@ -198,11 +200,12 @@ namespace WeaponThread {
                 TopTargets = 0, // 0 = unlimited, max number of top targets to randomize between.
                 TopBlocks = 4, // 0 = unlimited, max number of blocks to randomize between
                 StopTrackingSpeed = 1000, // do not track target threats traveling faster than this speed
+				MaxTargetDistance = 1250,
             },
             HardPoint = new HardPointDef
             {
                 WeaponName = "Meatball Left Side", // name of weapon in terminal
-                DeviateShotAngle = 2f,
+                DeviateShotAngle = 1.8f,
                 AimingTolerance = .3f, // 0 - 180 firing angle
                 AimLeadingPrediction = Accurate, // Off, Basic, Accurate, Advanced
                 DelayCeaseFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
@@ -244,17 +247,17 @@ namespace WeaponThread {
                 },
                 Loading = new LoadingDef
                 {
-                    RateOfFire = 800,
+                    RateOfFire = 720,
                     BarrelSpinRate = 0, // visual only, 0 disables and uses RateOfFire
-                    BarrelsPerShot = 2,
+                    BarrelsPerShot = 1,
                     TrajectilesPerBarrel = 1, // Number of Trajectiles per barrel per fire event.
                     SkipBarrels = 0,
-                    ReloadTime = 300, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                    ReloadTime = 120, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     DelayUntilFire = 31, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                    HeatPerShot = 3, //heat generated per shot
-                    MaxHeat = 2000, //max heat before weapon enters cooldown (70% of max heat)
-                    Cooldown = .2f, //percent of max heat to be under to start firing again after overheat accepts .2-.95
-                    HeatSinkRate = 13, //amount of heat lost per second
+                    HeatPerShot = 10, //heat generated per shot
+                    MaxHeat = 1000, //max heat before weapon enters cooldown (70% of max heat)
+                    Cooldown = .8f, //percent of max heat to be under to start firing again after overheat accepts .2-.95
+                    HeatSinkRate = 20, //amount of heat lost per second
                     DegradeRof = true, // progressively lower rate of fire after 80% heat threshold (80% of max heat)
                     ShotsInBurst = 0,
                     DelayAfterBurst = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
@@ -262,11 +265,11 @@ namespace WeaponThread {
                 },
                 Audio = new HardPointAudioDef
                 {
-                    PreFiringSound = "",
-                    FiringSound = "WepShipGatlingShot", //"WepTurretInteriorFire", // subtype name from sbc
+                    PreFiringSound = "ArcWepShipGatlingRotation",
+                    FiringSound = "ArcWepShipGatlingShot", // subtype name from sbc
                     FiringSoundPerShot = true,
                     ReloadSound = "",
-                    NoAmmoSound = "",
+                    NoAmmoSound = "ArcWepShipGatlingNoAmmo",
                     HardPointRotationSound = "WepTurretGatlingRotate",
                     BarrelRotationSound = "WepShipGatlingRotation",
                 },
@@ -303,7 +306,7 @@ namespace WeaponThread {
             },
        
 			Ammos = new [] {
-                MA_Gatling
+                MA_30mm
             },
             Animations = MeatBallLeftAnimations,
             // Don't edit below this line
@@ -328,6 +331,7 @@ namespace WeaponThread {
                 {
                     "muzzle_03", "muzzle_04",
                 },
+				Scope = "scope_02", //Where line of sight checks are performed from must be clear of block collision
             },
             Targeting = new TargetingDef
             {
@@ -345,11 +349,12 @@ namespace WeaponThread {
                 TopTargets = 0, // 0 = unlimited, max number of top targets to randomize between.
                 TopBlocks = 4, // 0 = unlimited, max number of blocks to randomize between
                 StopTrackingSpeed = 1000, // do not track target threats traveling faster than this speed
+				MaxTargetDistance = 1250,
             },
             HardPoint = new HardPointDef
             {
                 WeaponName = "Meatball Right Side", // name of weapon in terminal
-                DeviateShotAngle = 2f,
+                DeviateShotAngle = 1.8f,
                 AimingTolerance = .3f, // 0 - 180 firing angle
                 AimLeadingPrediction = Advanced, // Off, Basic, Accurate, Advanced
                 DelayCeaseFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
@@ -391,17 +396,17 @@ namespace WeaponThread {
                 },
                 Loading = new LoadingDef
                 {
-                    RateOfFire = 800,
+                    RateOfFire = 720,
                     BarrelSpinRate = 0, // visual only, 0 disables and uses RateOfFire
-                    BarrelsPerShot = 2,
+                    BarrelsPerShot = 1,
                     TrajectilesPerBarrel = 1, // Number of Trajectiles per barrel per fire event.
                     SkipBarrels = 0,
-                    ReloadTime = 300, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                    ReloadTime = 120, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     DelayUntilFire = 31, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                    HeatPerShot = 3, //heat generated per shot
-                    MaxHeat = 2000, //max heat before weapon enters cooldown (70% of max heat)
-                    Cooldown = .2f, //percent of max heat to be under to start firing again after overheat accepts .2-.95
-                    HeatSinkRate = 13, //amount of heat lost per second
+                    HeatPerShot = 10, //heat generated per shot
+                    MaxHeat = 1000, //max heat before weapon enters cooldown (70% of max heat)
+                    Cooldown = .8f, //percent of max heat to be under to start firing again after overheat accepts .2-.95
+                    HeatSinkRate = 20, //amount of heat lost per second
                     DegradeRof = true, // progressively lower rate of fire after 80% heat threshold (80% of max heat)
                     ShotsInBurst = 0,
                     DelayAfterBurst = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
@@ -409,11 +414,11 @@ namespace WeaponThread {
                 },
                 Audio = new HardPointAudioDef
                 {
-                    PreFiringSound = "",
-                    FiringSound = "WepShipGatlingShot", // subtype name from sbc
+                    PreFiringSound = "ArcWepShipGatlingRotation",
+                    FiringSound = "ArcWepShipGatlingShot", // subtype name from sbc
                     FiringSoundPerShot = true,
                     ReloadSound = "",
-                    NoAmmoSound = "",
+                    NoAmmoSound = "ArcWepShipGatlingNoAmmo",
                     HardPointRotationSound = "WepTurretGatlingRotate",
                     BarrelRotationSound = "WepShipGatlingRotation",
                 },
@@ -450,7 +455,7 @@ namespace WeaponThread {
             },
        
 			Ammos = new [] {
-                MA_Gatling
+                MA_30mm
             },
             Animations = MeatBallRightAnimations,
             // Don't edit below this line

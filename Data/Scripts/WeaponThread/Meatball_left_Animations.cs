@@ -51,12 +51,12 @@ namespace WeaponThread
                                 new RelMove
                                 {
                                     CenterEmpty = "",//Specifiy an empty on the subpart to rotate around
-                                    TicksToMove = 1, //number of ticks to complete motion, 60 = 1 second
+                                    TicksToMove = 5, //number of ticks to complete motion, 60 = 1 second
 
                                     MovementType = Linear, // ExpoGrowth (speedsup),  ExpoDecay (slows down), Linear, Delay, Show, Hide
                                     //EmissiveName = "LaserEmissive",//name of defined emissive 
                                     LinearPoints = new XYZ[0],
-                                    Rotation = Transformation(0, 0, 20f), //degrees
+                                    Rotation = Transformation(0, 0, 120f), //degrees
                                     RotAroundCenter = Transformation(0, 0, 0), //degrees, rotates around CenterEmpty
                                 },
                             },
@@ -72,7 +72,7 @@ namespace WeaponThread
                                     MovementType = Linear, // ExpoGrowth (speedsup),  ExpoDecay (slows down), Linear, Delay, Show, Hide
                                     //EmissiveName = "BarrelCoolDown",
                                     LinearPoints = new XYZ[0],
-                                    Rotation = Transformation(0, 0, 225f), //degrees
+                                    Rotation = Transformation(0, 0, 300f), //degrees
                                     RotAroundCenter = Transformation(0, 0, 0), //degrees, rotates around CenterEmpty
                                 },
                                 new RelMove
@@ -122,7 +122,7 @@ namespace WeaponThread
                                     MovementType = ExpoGrowth, // ExpoGrowth (speedsup),  ExpoDecay (slows down), Linear, Delay, Show, Hide
                                     //EmissiveName = "BarrelHeatUp",//name of defined emissive 
                                     LinearPoints = new XYZ[0],
-                                    Rotation = Transformation(0, 0, 600f), //degrees
+                                    Rotation = Transformation(0, 0, -600f), //degrees
                                     RotAroundCenter = Transformation(0, 0, 0), //degrees, rotates around CenterEmpty
                                 }
                             },
@@ -132,12 +132,12 @@ namespace WeaponThread
                                 new RelMove
                                 {
                                     CenterEmpty = "",//Specifiy an empty on the subpart to rotate around
-                                    TicksToMove = 1, //number of ticks to complete motion, 60 = 1 second
+                                    TicksToMove = 5, //number of ticks to complete motion, 60 = 1 second
 
                                     MovementType = Linear, // ExpoGrowth (speedsup),  ExpoDecay (slows down), Linear, Delay, Show, Hide
                                     //EmissiveName = "BarrelHeatUp",//name of defined emissive 
                                     LinearPoints = new XYZ[0],
-                                    Rotation = Transformation(0, 0, 20f), //degrees
+                                    Rotation = Transformation(0, 0, -120f), //degrees
                                     RotAroundCenter = Transformation(0, 0, 0), //degrees, rotates around CenterEmpty
                                 },
                             },
@@ -153,7 +153,7 @@ namespace WeaponThread
                                     MovementType = Linear, // ExpoGrowth (speedsup),  ExpoDecay (slows down), Linear, Delay, Show, Hide
                                     //EmissiveName = "BarrelCoolDown",
                                     LinearPoints = new XYZ[0],
-                                    Rotation = Transformation(0, 0, 225f), //degrees
+                                    Rotation = Transformation(0, 0, -300f), //degrees
                                     RotAroundCenter = Transformation(0, 0, 0), //degrees, rotates around CenterEmpty
                                 },
                                 new RelMove
@@ -164,7 +164,7 @@ namespace WeaponThread
                                     MovementType = Linear, // ExpoGrowth (speedsup),  ExpoDecay (slows down), Linear, Delay, Show, Hide
                                     //EmissiveName = "BarrelCoolDown",
                                     LinearPoints = new XYZ[0],
-                                    Rotation = Transformation(0, 0, 200f), //degrees
+                                    Rotation = Transformation(0, 0, -200f), //degrees
                                     RotAroundCenter = Transformation(0, 0, 0), //degrees, rotates around CenterEmpty
                                 },
                                 new RelMove
@@ -175,7 +175,7 @@ namespace WeaponThread
                                     MovementType = Linear, // ExpoGrowth (speedsup),  ExpoDecay (slows down), Linear, Delay, Show, Hide
                                     //EmissiveName = "BarrelCoolDown",
                                     LinearPoints = new XYZ[0],
-                                    Rotation = Transformation(0, 0, 100f), //degrees
+                                    Rotation = Transformation(0, 0, -100f), //degrees
                                     RotAroundCenter = Transformation(0, 0, 0), //degrees, rotates around CenterEmpty
                                 },
                             },

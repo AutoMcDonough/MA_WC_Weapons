@@ -72,7 +72,7 @@ namespace WeaponThread {
                 DelayCeaseFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
 
                 Ui = new UiDef {
-                    RateOfFire = true,
+                    RateOfFire = false,
                     DamageModifier = false,
                     ToggleGuidance = true,
                     EnableOverload =  false,
@@ -83,6 +83,7 @@ namespace WeaponThread {
                     TurretController = true,
                     PrimaryTracking = true,
                     LockOnFocus = false,
+					ForceTargetLead = true,
                 },
                 HardWare = new HardwareDef {
                     RotateRate = 0.01f,
@@ -114,7 +115,7 @@ namespace WeaponThread {
                     MaxHeat = 400, //max heat before weapon enters cooldown (70% of max heat)
                     Cooldown = .6f, //percent of max heat to be under to start firing again after overheat accepts .2-.95
                     HeatSinkRate = 9, //amount of heat lost per second
-                    DegradeRof = true, // progressively lower rate of fire after 80% heat threshold (80% of max heat)
+                    DegradeRof = false, // progressively lower rate of fire after 80% heat threshold (80% of max heat)
                     ShotsInBurst = 4,
                     DelayAfterBurst = 10, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     FireFullBurst = true,
@@ -227,7 +228,7 @@ namespace WeaponThread {
                 DelayCeaseFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
 
                 Ui = new UiDef {
-                    RateOfFire = true,
+                    RateOfFire = false,
                     DamageModifier = false,
                     ToggleGuidance = true,
                     EnableOverload =  false,
@@ -238,6 +239,7 @@ namespace WeaponThread {
                     TurretController = true,
                     PrimaryTracking = true,
                     LockOnFocus = false,
+					ForceTargetLead = true,
                 },
                 HardWare = new HardwareDef {
                     RotateRate = 0.01f,
@@ -269,7 +271,7 @@ namespace WeaponThread {
                     MaxHeat = 500, //max heat before weapon enters cooldown (70% of max heat)
                     Cooldown = .6f, //percent of max heat to be under to start firing again after overheat accepts .2-.95
                     HeatSinkRate = 5, //amount of heat lost per second
-                    DegradeRof = true, // progressively lower rate of fire after 80% heat threshold (80% of max heat)
+                    DegradeRof = false, // progressively lower rate of fire after 80% heat threshold (80% of max heat)
                     ShotsInBurst = 4,
                     DelayAfterBurst = 15, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     FireFullBurst = true,

@@ -324,7 +324,7 @@ namespace WeaponThread
                     },
                     Shields = new ShieldDef
                     {
-                        Modifier = -1f,
+                        Modifier = 1.5f,
                         Type = Kinetic,
                         BypassModifier = -1f,
                     },
@@ -334,11 +334,7 @@ namespace WeaponThread
                         IgnoreAllOthers = false,
                         Types = new []
                         {
-                            new CustomBlocksDef
-                        {
-                            SubTypeId = "LargeHeavyBlockArmorBlock",
-                            Modifier = 2f,
-                        },
+                        
                             new CustomBlocksDef
                             {
                                 SubTypeId = "Test2",
@@ -397,7 +393,7 @@ namespace WeaponThread
                     MaxLifeTime = 240, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     AccelPerSec = 0f,
                     DesiredSpeed = 650,
-                    MaxTrajectory = 1500f,
+                    MaxTrajectory = 2000f,
                     FieldTime = 0, // 0 is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                     SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
                     RangeVariance = Random(start: 0, end: 0), // subtracts value from MaxTrajectory

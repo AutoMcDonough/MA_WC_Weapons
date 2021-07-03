@@ -125,9 +125,9 @@ namespace WeaponThread {
                     Cooldown = .6f, //percent of max heat to be under to start firing again after overheat accepts .2-.95
                     HeatSinkRate = 10, //amount of heat lost per second
                     DegradeRof = true, // progressively lower rate of fire after 80% heat threshold (80% of max heat)
-                    ShotsInBurst = 1,
+                    ShotsInBurst = 0,
                     DelayAfterBurst = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                    FireFullBurst = true,
+                    FireFullBurst = false,
                     GiveUpAfterBurst = false,
                 },
                 Audio = new HardPointAudioDef {

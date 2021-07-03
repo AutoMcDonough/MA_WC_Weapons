@@ -1055,9 +1055,9 @@ namespace WeaponThread {
                 },
                 Audio = new HardPointAudioDef
                 {
-                    PreFiringSound = "PDTFiringSound",
+                    PreFiringSound = "",
                     FiringSound = "", // subtype name from sbc
-                    FiringSoundPerShot = true,
+                    FiringSoundPerShot = false,
                     ReloadSound = "",
                     NoAmmoSound = "",
                     HardPointRotationSound = "WepTurretGatlingRotate",
