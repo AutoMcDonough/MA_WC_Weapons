@@ -38,6 +38,13 @@ Particle effects by Northwind Industries</Description>
 				<MountPoint Side="Right" StartX="1.33" StartY="0.00" EndX="1.67" EndY="1.00"/>
 				<MountPoint Side="Right" StartX="0.00" StartY="1.01" EndX="3.00" EndY="1.99"/>
 				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
+				
+				
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" Enabled="false"/>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.92" EndX="3.00" EndY="3.00" Enabled="false"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.92" EndX="3.00" EndY="3.00" Enabled="false"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.92" EndX="3.00" EndY="3.00" Enabled="false"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.92" EndX="3.00" EndY="3.00" Enabled="false"/>
 			</MountPoints>
 	<BlockPairName>MA_AC150</BlockPairName>
 			<BuildProgressModels>
@@ -153,11 +160,18 @@ Particle effects by Northwind Industries</Description>
 	<Model>Models\MA_AC150\MA_AC150_30.mwm</Model>
 			<MountPoints>
 				<MountPoint Side="Front" StartX="0.00" StartY="0.01" EndX="3.00" EndY="0.99"/>
+				<MountPoint Side="Front" StartX="0.00" StartY="1.00" EndX="3.00" EndY="3.00" Enabled="false"/>
 				<MountPoint Side="Back" StartX="0.00" StartY="1.00" EndX="3.00" EndY="2.50"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="1.00" EndX="3.00" EndY="3.00" Enabled="false"/>
+				<MountPoint Side="Left" StartX="1.50" StartY="0.99" EndX="3.00" EndY="2.51"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="1.00" EndX="1.50" EndY="1.75"/>
 				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="2.03" EndY="1.00"/>
-				<MountPoint Side="Left" StartX="0.00" StartY="0.99" EndX="3.00" EndY="2.51"/>
-				<MountPoint Side="Right" StartX="0.00" StartY="0.99" EndX="3.00" EndY="2.51"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="1.00" EndX="3.00" EndY="3.00" Enabled="false"/>
+				<MountPoint Side="Right" StartX="1.50" StartY="1.00" EndX="3.00" EndY="1.75"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.99" EndX="1.50" EndY="2.51"/>
 				<MountPoint Side="Right" StartX="0.97" StartY="0.00" EndX="3.00" EndY="1.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="1.00" EndX="3.00" EndY="3.00" Enabled="false"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" Enabled="false"/>
 				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
 			</MountPoints>
 			<BuildProgressModels>
@@ -265,6 +279,12 @@ Particle effects by Northwind Industries</Description>
 				<MountPoint Side="Right" StartX="0.97" StartY="0.00" EndX="3.00" EndY="1.00"/>
 				<MountPoint Side="Right" StartX="0.00" StartY="2.00" EndX="1.00" EndY="4.00"/>
 				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="3.00" EndY="2.04"/>
+
+<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" Enabled="false"/>
+<MountPoint Side="Front" StartX="0.00" StartY="1.00" EndX="3.00" EndY="4.00" Enabled="false"/>
+<MountPoint Side="Left" StartX="0.00" StartY="1.00" EndX="3.00" EndY="4.00" Enabled="false"/>
+<MountPoint Side="Right" StartX="0.00" StartY="1.00" EndX="3.00" EndY="4.00" Enabled="false"/>
+				
 			</MountPoints>
 			<BuildProgressModels>
 				<Model BuildPercentUpperBound="0.33" File="Models\MA_AC150\MA_AC150_45_BS1.mwm"/>

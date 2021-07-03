@@ -7,7 +7,7 @@
         <TypeId>AmmoMagazine</TypeId>
         <SubtypeId>MA_150mm</SubtypeId>
       </Id>
-      <DisplayName>150mm Tiger Shells</DisplayName>
+      <DisplayName>150mm HE Rounds</DisplayName>
       <Icon>Textures\GUI\Icons\MA_150mm.dds</Icon>
       <Size>
         <X>1.4</X>
@@ -26,7 +26,7 @@
         <TypeId>AmmoMagazine</TypeId>
         <SubtypeId>MA_30mm</SubtypeId>
       </Id>
-      <DisplayName>30mm Tiger Shells</DisplayName>
+      <DisplayName>30mm Rounds</DisplayName>
       <Icon>Textures\GUI\Icons\MA_150mm.dds</Icon>
       <Size>
         <X>.12</X>
@@ -36,7 +36,7 @@
       <Mass>96</Mass>
       <Volume>5</Volume>
       <Model>Models\Ammo\MA_30mm.mwm</Model>
-      <Capacity>24</Capacity>
+      <Capacity>36</Capacity>
       <AmmoDefinitionId Subtype="Energy" />
     </AmmoMagazine>
 
