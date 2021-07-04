@@ -254,6 +254,7 @@ namespace WeaponThread
                     [ProtoMember(4)] internal bool PrimaryTracking;
                     [ProtoMember(5)] internal bool LockOnFocus;
                     [ProtoMember(6)] internal bool SuppressFire;
+                    [ProtoMember(7)] internal bool ForceTargetLead;
                 }
 
                 [ProtoContract]
@@ -276,6 +277,8 @@ namespace WeaponThread
                     [ProtoMember(8)] internal int MinElevation;
                     [ProtoMember(9)] internal float InventorySize;
                     [ProtoMember(10)] internal ArmorState Armor;
+                    [ProtoMember(11)] internal int HomeAzimuth;
+                    [ProtoMember(12)] internal int HomeElevation;
                 }
 
                 [ProtoContract]
@@ -735,6 +738,8 @@ namespace WeaponThread
                         [ProtoMember(8)] internal bool NoTargetExpire;
                         [ProtoMember(9)] internal bool Roam;
                         [ProtoMember(10)] internal bool KeepAliveAfterTargetLoss;
+                        [ProtoMember(11)] internal float OffsetRatio;
+                        [ProtoMember(12)] internal int OffsetTime;
                     }
 
                     [ProtoContract]
@@ -793,3 +798,4 @@ namespace WeaponThread
         }
     }
 }
+
