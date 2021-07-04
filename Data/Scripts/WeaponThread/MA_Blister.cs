@@ -169,13 +169,13 @@ namespace WeaponThread {
                 },
                 Audio = new HardPointAudioDef
                 {
-                    PreFiringSound = "ArcWepShipGatlingRotation",
-                    FiringSound = "ArcWepShipGatlingShot", // subtype name from sbc
+                    PreFiringSound = "MD_GatlingBarrelLoop",
+                    FiringSound = "Blister_30_Shot", // subtype name from sbc
                     FiringSoundPerShot = true,
                     ReloadSound = "",
                     NoAmmoSound = "ArcWepShipGatlingNoAmmo",
                     HardPointRotationSound = "WepTurretGatlingRotate",
-                    BarrelRotationSound = "WepShipGatlingRotation",
+                    BarrelRotationSound = "MD_GatlingBarrelLoop",
                 },
                 Graphics = new HardPointParticleDef
                 {

@@ -298,7 +298,7 @@ namespace WeaponThread {
                 Audio = new HardPointAudioDef
                 {
                     PreFiringSound = "",
-                    FiringSound = "", // subtype name from sbc
+                    FiringSound = "MediumLaserLoop", // subtype name from sbc
                     FiringSoundPerShot = false,
                     ReloadSound = "",
                     NoAmmoSound = "",
@@ -697,7 +697,7 @@ namespace WeaponThread {
                 Audio = new HardPointAudioDef
                 {
                     PreFiringSound = "",
-                    FiringSound = "", // subtype name from sbc
+                    FiringSound = "MediumLaserLoop", // subtype name from sbc
                     FiringSoundPerShot = false,
                     ReloadSound = "",
                     NoAmmoSound = "",
@@ -1056,8 +1056,8 @@ namespace WeaponThread {
                 Audio = new HardPointAudioDef
                 {
                     PreFiringSound = "",
-                    FiringSound = "", // subtype name from sbc
-                    FiringSoundPerShot = false,
+                    FiringSound = "PDTFiringSound", // subtype name from sbc
+                    FiringSoundPerShot = true,
                     ReloadSound = "",
                     NoAmmoSound = "",
                     HardPointRotationSound = "WepTurretGatlingRotate",
